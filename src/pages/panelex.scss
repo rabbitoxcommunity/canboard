@@ -10,78 +10,31 @@
 section.panelex__categories {
     padding-top: 100px;
     background-color: #FFFCF5;
+    background-image: url("../../public/assets/img/canboard/1.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    object-position: top;
 
     h2 {
         font-family: var(--font-primary);
-        font-size: 52px;
-        line-height: 58px;
-        font-weight: 400;
+        font-size: 68px;
+        line-height: 71.46px;
+        font-weight: 600;
         margin-bottom: 50px;
     }
 
-    .scroll-container {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        scroll-behavior: smooth;
-        padding-bottom: 10px;
-        margin-left: 5%;
-        /* For Firefox */
-        scrollbar-color: #FFFCF5 #FFFCF5;
-        /* thumb color | track color */
-        scrollbar-width: thin;
-
-        &::-webkit-scrollbar {
-            height: 1px;
-        }
-
-        &::-webkit-scrollbar-track {
-            background: #FFFCF5;
-        }
-
-        &::-webkit-scrollbar-thumb {
-            background-color: #FFFCF5;
-            border-radius: 4px;
-
-            &:hover {
-                background-color: #FFFCF5;
-            }
-        }
-
-        .row {
-            flex-wrap: nowrap;
-        }
-
-
-
-        .Grid {
-            a {
-                text-decoration: none;
-                color: #000;
-                transition: all 0.3s ease;
-            }
-
-            &:hover {
-                p {
-                    text-decoration-color: var(--color-primary);
-                    transition: all 0.3s ease;
-                }
-            }
-
-            img {
-                width: 100%;
-                height: 400px;
-                object-fit: cover;
-            }
-
-            p {
-                margin-top: 10px;
-                text-decoration: underline;
-                text-underline-offset: 4px;
-                transition: all 0.3s ease;
-            }
-        }
-
+    p {
+        font-family: Helvetica;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: -0.6px;
+        margin-bottom: 20px;
     }
+
+
 
 }
 
@@ -143,9 +96,10 @@ section.panelex__future {
 
 .panelex__teak {
     padding-top: 100px;
-     a{
-            text-decoration: none;
-        }
+
+    a {
+        text-decoration: none;
+    }
 
     .grid {
         text-align: center;
@@ -1132,7 +1086,7 @@ section.related__products {
                 font-size: 45px;
                 letter-spacing: -0.941px;
                 line-height: 50px;
-                        padding-top: 60px;
+                padding-top: 60px;
             }
 
             h1 {
@@ -1272,9 +1226,10 @@ section.related__products {
     }
 
     section.panelex__teak {
-        a{
+        a {
             text-decoration: none;
         }
+
         .grid {
             img {
                 width: 100%;
@@ -1444,11 +1399,12 @@ section.related__products {
     }
 
 
-.main__header.panelex__header{
-    .header{
-        padding: 20px 0;
+    .main__header.panelex__header {
+        .header {
+            padding: 20px 0;
+        }
     }
-}
+
     section.panelex__mission {
         .contents {
             min-height: 90dvh;
@@ -1564,17 +1520,20 @@ section.related__products {
 
         .grid {
             height: fit-content;
-            h2{
+
+            h2 {
                 font-size: 45px;
-                        line-height: 58px;
+                line-height: 58px;
             }
+
             p {
                 letter-spacing: 0px !important;
                 width: 90%;
             }
         }
     }
-    .primeply__footer.panelex__footer .footer__logo__section{
+
+    .primeply__footer.panelex__footer .footer__logo__section {
         min-height: 40vh;
     }
 
@@ -1687,7 +1646,7 @@ section.related__products {
             padding-right: 12px !important;
         }
 
-          .product_image {
+        .product_image {
             padding-top: 240px;
             padding-bottom: 170px;
 

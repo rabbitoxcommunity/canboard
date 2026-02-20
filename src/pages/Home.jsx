@@ -93,33 +93,19 @@ export default function PHome() {
       <section className="p-0 panelex__banner">
         <img src="/assets/panelex/banner.jpg" alt="" />
         <div className="banner__content">
-          <h1 ref={headingRef}>The Next-Generation <br /> Engineered Boards</h1>
+          <h1 ref={headingRef}>Smartest engineered wood <br /> for everyday interiors.</h1>
+          <p data-aos="fade-up">Build to perform through heat, humidity, and <br />everyday moisture in indian conditions.</p>
         </div>
       </section>
 
       <section className="panelex__categories" data-aos="fade-up">
         <div className="container">
-          <h2 data-aos="fade-in">Beautiful chipboard for spaces where<br /> people <span class="break-after"> live, work, and learn</span></h2>
-        </div>
-        <div className="scroll-container">
-          <div className="row flex-nowrap">
-            {
-              chipboards?.map((ele, i) => {
-                return (
-                  <div className="col-md-4 pe-0" key={i}>
-
-                    <div className="Grid">
-                      <Link to='/panelex/products'>
-                        <img src={ele?.img} alt="" />
-                        <p>{ele?.title}</p>
-                      </Link>
-                    </div>
-                  </div>
-                )
-              })
-            }
-
+          <div className="col-md-6">
+            <h2 data-aos="fade-in">Why is Canboard the Smart Choice?</h2>
+            <p data-aos="fade-in">Canboard is an advanced HMR engineered wood board designed for interiors exposed to moisture, humidity and frequent use. It retains its strength and shape over time, making it suitable for kitchens, workspaces, storage and commercial settings.</p>
+            <p data-aos="fade-in">With strong screw-holding capacity and stable core construction, it serves as a smarter alternative to conventional panel-based products such as plywood, MDF and PVC boards.</p>
           </div>
+
         </div>
       </section>
       <section className="panelex__future">
@@ -136,7 +122,7 @@ export default function PHome() {
             <div className="col-md-6">
               <div className="grid end">
                 <Link to={'/panelex/mission'}><button className='btn btn-white' data-aos="fade-in">Find out how we do it</button></Link>
-                
+
               </div>
             </div>
           </div>

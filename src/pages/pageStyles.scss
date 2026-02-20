@@ -236,7 +236,14 @@ section.getStarted {
         // transform: translate(-50%,-50%);
         h1 {
             color: #fff;
-            font-size: 100px;
+            font-size: 80px;
+            line-height: 1.1;
+            font-family: var(--font-primary);
+        }
+
+        p {
+            color: #fff;
+            font-size: 44px;
             line-height: 1.1;
             font-family: var(--font-primary);
         }
