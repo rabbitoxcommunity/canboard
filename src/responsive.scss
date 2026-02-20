@@ -1,0 +1,1783 @@
+@media only screen and (max-width: 600px) {
+
+    .panelex__banner {
+        .banner__content {
+            top: 50%;
+                    left: 20px;
+        }
+
+        &::after {
+            height: 75vh;
+        }
+
+        img {
+            height: 75vh;
+        }
+
+        .banner__content h1 {
+            font-size: 50px;
+        }
+    }
+
+    // .container {
+    //     width: 90% !important;
+    // }
+
+    .menu__items {
+        ul {
+            line-height: 1.4 !important;
+        }
+    }
+
+    // default
+    .hidden-xs {
+        display: none !important;
+    }
+
+    label {
+        font-size: 18px;
+        font-style: normal;
+        line-height: 18.722px;
+        /* 93.612% */
+        letter-spacing: -0.3px;
+        padding-bottom: 10px;
+    }
+
+    p,
+    li,
+    a {
+        // font-weight: 400 !important;
+        // letter-spacing: -0.722px !important;
+    }
+
+    .sm-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .sm-w-100 {
+        width: 100%;
+    }
+
+    .sm-p-reverse {
+        padding-right: calc(1.5rem * .5) !important;
+        padding-left: calc(1.5rem * .5) !important;
+    }
+
+    section {
+        padding: 40px 0 !important;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .primeply__banner.main__banner {
+        height: 80vh;
+
+        .banner__content {
+            left: 0;
+        }
+    }
+
+
+    .primeply__bestselling {
+        .imgGrid {
+            width: 100%;
+
+            &:first-child {
+                margin: 0;
+            }
+
+            &:last-child .card {
+                left: 5%;
+                right: inherit;
+            }
+
+            .card {
+                min-width: 80%;
+                left: 5%;
+                width: 90%;
+                padding: 30px 20px 40px 20px;
+
+                h2 {
+                    font-size: 38px;
+                    font-style: normal;
+                    line-height: 58.726px;
+                    letter-spacing: -1.44px;
+                }
+
+                p {
+                    font-size: 22px;
+                    font-weight: 300 !important;
+                    line-height: 27.2px;
+                    letter-spacing: -0.36px;
+
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .primeply__footer {
+        .footer__logo__section {
+            min-height: 60vh !important;
+        }
+
+        .footer__logo {
+            img {
+                width: 100% !important;
+            }
+        }
+    }
+
+    section.getStarted {
+        height: 80vh;
+
+        .header img {
+            height: 70px;
+        }
+
+        .main__banner {
+            padding-top: 80%;
+
+            h1 {
+                font-size: 47px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 48.01px;
+                text-align: center;
+                letter-spacing: -1.62px;
+            }
+        }
+    }
+
+    .our__brands {
+        h6 {
+            font-size: 19px;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            font-size: 32px;
+            line-height: 36.823px;
+            letter-spacing: -0.648px;
+            margin-bottom: 40px;
+        }
+
+        .brand__image {
+            border-radius: 30px;
+            height: 340px;
+            gap: 30px;
+        }
+    }
+
+    .guarantee {
+        .overlay {
+            width: 50%;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 33.804px;
+            letter-spacing: -0.648px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-size: 19px;
+            // line-height: 24.314px;
+            font-weight: 400;
+            letter-spacing: -0.722px;
+        }
+    }
+
+    .milestones {
+        .title {
+            padding-bottom: 0;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .scroll__bar .milesGrid {
+            width: 80%;
+            min-height: 200px;
+            margin-right: 20px;
+            padding: 40px;
+
+            h2 {
+                font-size: 43px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 24.314px;
+                letter-spacing: -0.422px;
+            }
+        }
+    }
+
+    .footer__section {
+        p {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        ul {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+
+            // li {
+            //     padding-right: 20px;
+            // }
+        }
+    }
+
+    .main__header {
+        .menu__lists .menu__items .logo__menu {
+            padding-top: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .header .navbar .menu-toggle {
+            width: 35px;
+            height: 15px;
+        }
+    }
+
+    .main__header .header .navbar .menu-toggle.active .line:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .main__header .header .navbar .menu-toggle.active .line:nth-child(2) {
+        transform: translateY(-5px) rotate(-45deg);
+    }
+
+    .main__header .header .logo img {
+        width: 100px;
+    }
+
+    .main__header .menu__lists .menu__items ul li {
+        font-size: 45px;
+    }
+
+    .primeply__banner .banner__content {
+        left: 4%;
+        top: 70%;
+
+        h1 {
+            font-size: 45px;
+            line-height: 45.345px;
+            /* 95.399% */
+            letter-spacing: -1.426px;
+        }
+    }
+
+
+    .primeply__about {
+        text-align: left;
+
+        .about__content h4 {
+            margin-bottom: 25px;
+            text-align: left;
+
+            br {
+                display: none !important;
+            }
+        }
+    }
+
+    .primeply__featured .featured__grid {
+        .featured__img {
+            &.pb-sm-2 {
+                padding-bottom: 1rem !important;
+            }
+
+            img {
+                border-radius: 20px;
+            }
+        }
+
+        .featured__content {
+            padding: 28px;
+            padding-left: 0;
+        }
+    }
+
+    .primeply__featured .featured__grid {
+        overflow: hidden;
+
+        .featured__content h5 {
+            font-size: 21px;
+        }
+    }
+
+    .btn-rounded img {
+        height: 50px !important;
+    }
+
+    .primeply__bestselling {
+        .heading {
+            padding-bottom: 0;
+        }
+
+        .features {
+            padding-top: 40px;
+        }
+    }
+
+    .primeply__footer {
+        .footer__widgets {
+            padding-bottom: 40px;
+        }
+
+        .upper__footer .copyright {
+            text-align: left;
+            padding-top: 0;
+            padding-bottom: 40px;
+        }
+
+        .footer__bottom {
+            .footer__logo__section h2 {
+                font-size: 38px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    .innerpage.wuudly__about {
+        h2.core:last-child {
+            padding-bottom: 80px;
+            text-align: center;
+        }
+
+        h2.core {
+            font-size: 100px;
+            line-height: 1.1;
+            letter-spacing: -5.718px;
+            padding: 80px 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .wuudly__innerBanner {
+        margin-top: 0;
+        background-position: center;
+
+        h1 {
+            color: #fff;
+            color: #fff;
+            font-size: 38px;
+            font-family: var(--font-primary);
+            z-index: 11;
+            position: relative;
+            padding-bottom: 50px;
+        }
+    }
+
+    .innerpage.wuudly__about {
+        .eco__friendly {
+            overflow: hidden;
+
+            .eco-responsibility {
+                padding: 20px !important;
+                padding-top: 60px !important;
+            }
+
+            .eco__content {
+                p {
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 1.3;
+                    letter-spacing: -0.96px;
+                }
+
+                h2 {
+                    font-size: 43px;
+                    font-style: normal;
+                    font-weight: 300 !important;
+                    line-height: 1.1;
+                    letter-spacing: -1.53px;
+                    padding-bottom: 30px;
+                }
+            }
+        }
+
+        h4 {
+            font-size: 30px;
+            line-height: 1.3;
+            padding: 50px 0;
+            padding-bottom: 0;
+        }
+
+        h5 {
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 1.3;
+            letter-spacing: -0.48px;
+        }
+    }
+
+    .wuudly__products {
+
+
+        .products__tabs {
+            .tab__products {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-wrap: nowrap !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto;
+                overflow-y: hidden;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+
+                .productGrid {
+                    padding: 8px;
+
+                    .title {
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+
+        // .product__header {
+        //     justify-content: center;
+        // }
+
+        .product__logo {
+            flex-direction: column;
+            text-align: left !important;
+            align-items: start !important;
+            padding-bottom: 35px !important;
+            // padding-top: 50px;
+
+            img {
+                width: 130px !important;
+                // margin: 0 auto;
+                padding-bottom: 10px;
+            }
+
+            h2 {
+                padding-left: 0 !important;
+                font-size: 28px !important;
+                line-height: 1.3 !important;
+                // text-align: center;
+            }
+        }
+
+        .navigation .arrow-btn img {
+            height: 40px !important;
+        }
+
+        .product__items .navigation {
+            top: 1% !important;
+            background-color: #fff;
+            right: 0px !important;
+
+            .arrow-btn {
+                padding: 0;
+
+                &:first-child {
+                    padding-right: 5px;
+                }
+            }
+        }
+
+        .product__image {
+            img {
+                height: 350px !important;
+            }
+
+            margin-top: 40px;
+        }
+
+        .product__details h2 {
+            font-size: 28px !important;
+            line-height: 1.3 !important;
+        }
+
+        .subtitle h4 {
+            font-size: 20px;
+        }
+
+        .product__details {
+            padding-left: 0 !important;
+            padding-top: 20px;
+
+            h5 {
+                font-size: 22px !important;
+                line-height: 1.3 !important;
+            }
+        }
+
+        .wuudboard {
+            h3 {
+                font-size: 20.21px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 26.273px;
+                /* 130% */
+                letter-spacing: -0.303px;
+            }
+        }
+    }
+
+    .wuudly__vision {
+        position: relative;
+
+        h2 {
+            font-size: 130px;
+            line-height: 126px;
+            letter-spacing: -6px;
+            padding-bottom: 20px;
+        }
+
+        h2.mission {
+            font-size: 110px;
+            line-height: 126px;
+            letter-spacing: -6px;
+            padding-bottom: 20px;
+        }
+
+        h4 {
+            font-size: 30px !important;
+            line-height: 1.3 !important;
+            padding: 30px 0 !important;
+        }
+
+        h5 {
+            font-size: 22px;
+            line-height: 1.3;
+            padding-bottom: 0;
+        }
+
+        .our__ethos {
+            padding: 40px 0;
+
+            h2 {
+                font-size: 40px;
+                line-height: 1.3;
+
+                br {
+                    display: none;
+                }
+            }
+
+            h4 {
+                font-size: 22px !important;
+                line-height: 1.3 !important;
+                padding-top: 0 !important;
+            }
+        }
+    }
+
+    .wuudly__innovation {
+        h3 {
+            font-size: 28px !important;
+            line-height: 1.3 !important;
+            padding: 30px 0 !important;
+        }
+
+        .banner__innovation {
+
+            background-position: top;
+
+            h4 {
+                font-size: 23px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 29.9px;
+                /* 130% */
+                letter-spacing: -0.345px;
+            }
+        }
+
+        .gurjan-plywood {
+            h5 {
+                font-size: 23px;
+                font-style: normal;
+                line-height: 29.9px;
+                /* 130% */
+                letter-spacing: -0.345px;
+                padding: 30px;
+            }
+        }
+    }
+
+    .primeply__gallery {
+        .gallery__grid img {
+            height: 370px;
+            margin-bottom: 30px;
+        }
+
+    }
+
+    .primeply__contact {
+        .whatsapp {
+            min-height: 300px;
+
+            span {
+                display: none;
+            }
+
+            h3 {
+                font-size: 38px;
+                line-height: 45.6px;
+                /* 120% */
+                letter-spacing: -1.14px;
+            }
+        }
+
+        h2 {
+            font-size: 38px;
+            padding-bottom: 40px;
+            font-style: normal;
+            line-height: 57.6px;
+            /* 120% */
+            letter-spacing: -1.44px;
+        }
+
+        h4 {
+            font-size: 23px;
+            font-style: normal;
+            line-height: 29.9px;
+            /* 130% */
+            letter-spacing: -0.345px;
+            padding-right: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .wuudly__products .products__tabs {
+        padding: 16px 0;
+    }
+
+    .primeply__banner video {
+        height: 80vh;
+    }
+}
+
+
+/* IPAD PRO */
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .panelex__banner .banner__content{
+        left: 20px;
+    }
+    .panelex__about {
+    min-height: 43dvh !important;
+    }
+    section.panelex__categories .scroll-container .Grid img {
+        height: 240px !important;
+    }
+    .panelex__banner .banner__content h1{
+        font-size: 80px;
+    }
+
+    section.panelex__teak .grid img {
+        width: 100%;
+        height: auto !important;
+    }
+
+    .panelex__banner img {
+        height: 60vh;
+    }
+
+    .primeply__banner video {
+        width: 100%;
+        height: 80vh;
+    }
+
+
+    .col-tab-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-tab-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .offset-tab-4 {
+        margin-left: 33.33333333%;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    .col-9.sm-w-100 {
+        width: 100%;
+    }
+
+    .primeply__bestselling .imgGrid {
+        &:last-child .card {
+            left: 5%;
+            right: auto;
+        }
+
+        height: 60vh;
+    }
+
+    .primeply__banner {
+        height: 80vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+
+        .banner__content {
+            top: 60%;
+
+            h1 {
+                font-size: 120px;
+                font-weight: 500;
+                line-height: 125px;
+            }
+        }
+    }
+
+    section.getStarted {
+        height: 70vh;
+
+        .header img {
+            height: 100px;
+        }
+
+        .main__banner {
+            padding-top: 30%;
+
+            h1 {
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 90px;
+                text-align: center;
+                letter-spacing: -1.62px;
+            }
+        }
+    }
+
+    .our__brands {
+        padding-top: 0;
+
+        h6 {
+            font-size: 36px;
+            padding-bottom: 34px;
+
+        }
+
+        h2 {
+            font-size: 52px;
+            line-height: 55px;
+            letter-spacing: -0.648px;
+            margin-bottom: 40px;
+
+        }
+
+        .brand__image {
+            border-radius: 30px;
+            height: 421px;
+            gap: 35px;
+        }
+    }
+
+    .guarantee {
+        .overlay {
+            width: 75%;
+        }
+
+        h2 {
+            font-size: 74px;
+            font-weight: 600;
+            line-height: 75px;
+            letter-spacing: -0.648px;
+            padding-bottom: 30px;
+
+        }
+
+        p {
+            font-size: 26px;
+            line-height: 32px;
+            letter-spacing: -0.422px;
+        }
+    }
+
+    .milestones {
+        .title {
+            padding-bottom: 0;
+
+            h2 {
+                font-size: 52px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 50px;
+            }
+        }
+
+        .scroll__bar {
+            padding-bottom: 80px;
+        }
+
+        .scroll__bar .milesGrid {
+            width: 44%;
+            min-height: 264px;
+            margin-right: 20px;
+            padding: 58px;
+
+            h2 {
+                font-size: 56px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 32px;
+                line-height: 35px;
+                letter-spacing: -0.422px;
+            }
+        }
+    }
+
+    .footer__section {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        p {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        ul {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+
+            li {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    footer.getstarted__footer {
+        position: relative;
+        min-height: 160px;
+
+        svg {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            bottom: 38%;
+            width: 100%;
+        }
+    }
+
+    .primeply__featured {
+        .featured__grid {
+            overflow: hidden;
+
+            .featured__content {
+                padding: 42px;
+
+                h5 {
+                    font-size: 28px;
+                }
+            }
+
+            .featured__img {
+                img {
+                    min-height: 320px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+
+    .footer__bottom {
+        .footer__logo__section {
+            h2 {}
+        }
+    }
+
+    .wuudly__innerBanner h1 {
+        font-size: 55px;
+    }
+
+    .innerpage.wuudly__about {
+        h5:first-child {
+            margin-bottom: 40px;
+            padding-top: 0px;
+        }
+
+        .eco__friendly {
+            overflow: hidden;
+
+            .eco__content {
+                img {
+                    min-height: 530px;
+                    object-fit: cover;
+                }
+            }
+
+            .eco-responsibility {
+                padding: 0 !important;
+
+                h2 {
+                    font-size: 40px;
+                    line-height: 1.2;
+                    padding-bottom: 20px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                p {
+                    font-size: 25px;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+
+    .wuudly__products {
+        .products__tabs {
+            .tab__products {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto;
+                overflow-y: hidden;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        .product__descriptions {
+            .product__items {
+                .product__image {
+                    img {
+                        min-height: 660px;
+                    }
+                }
+
+                .product__details {
+                    padding-left: 0;
+
+                    h2 {
+                        font-size: 32px;
+                        line-height: 1.2;
+                    }
+
+                    h5 {
+                        font-size: 24px;
+                        line-height: 1.2;
+                        padding-top: 0;
+                    }
+                }
+
+                .navigation {
+                    top: -26px;
+                }
+
+                .product__logo {
+                    padding-bottom: 50px !important;
+                    padding-top: 50px;
+                    flex-direction: column;
+                    align-items: start !important;
+
+                    img {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .wuudly__vision {
+        h4 {
+            padding-bottom: 0;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 365px;
+            line-height: 1.3;
+        }
+
+        h2.mission {
+            font-size: 300px;
+            line-height: 1.3;
+        }
+
+        h5 {
+            padding-bottom: 0;
+        }
+
+        .our__ethos {
+            h2 {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .wuudly__innovation {
+        .banner__innovation {
+            height: 80vh;
+            background-position: top;
+        }
+
+        .gurjan-plywood {
+            h5 {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.3;
+                letter-spacing: -1.055px;
+                padding: 43px;
+            }
+        }
+    }
+
+    .primeply__gallery .gallery__grid img {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .primeply__contact {
+        h2 {
+            font-size: 70px;
+            padding-bottom: 40px;
+        }
+
+        h4 {
+            font-size: 38px;
+        }
+
+        .whatsapp h3 {
+            font-size: 48px;
+            line-height: 1.3;
+        }
+    }
+
+    .footer__logo__section {
+        min-height: 50vh !important;
+    }
+}
+
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+
+    .col-tab-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-tab-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .offset-tab-4 {
+        margin-left: 33.33333333%;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    section.getStarted {
+        height: 80vh;
+
+        .header img {
+            height: 100px;
+        }
+
+        .main__banner {
+            padding-top: 30%;
+
+            h1 {
+                font-size: 85px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 88.01px;
+                text-align: center;
+                letter-spacing: -1.62px;
+            }
+        }
+    }
+
+    .our__brands {
+        padding-top: 0;
+
+        h6 {
+            font-size: 30px;
+            padding-bottom: 20px;
+            padding-top: 30px;
+
+        }
+
+        h2 {
+            font-size: 40px;
+            line-height: 43px;
+            letter-spacing: -0.648px;
+            margin-bottom: 40px;
+
+        }
+
+        .brand__image {
+            border-radius: 30px;
+            height: 250px;
+            gap: 20px;
+        }
+    }
+
+    .guarantee {
+        .overlay {
+            width: 75%;
+        }
+
+        h2 {
+            font-size: 56px;
+            font-weight: 600;
+            line-height: 55.804px;
+            letter-spacing: -0.648px;
+            padding-bottom: 30px;
+        }
+
+        p {
+            font-size: 22px;
+            line-height: 26.314px;
+            letter-spacing: -0.422px;
+        }
+    }
+
+    .col-9.sm-w-100 {
+        width: 100%;
+    }
+
+    .primeply__bestselling .imgGrid {
+        &:last-child .card {
+            left: 5%;
+            right: auto;
+        }
+
+        height: 80vh;
+    }
+
+    .primeply__banner {
+        height: 80vh;
+        background-repeat: no-repeat;
+        width: 100%;
+        object-fit: cover;
+        background-size: cover;
+
+        .banner__content {
+            top: 60%;
+
+            h1 {
+                font-size: 100px;
+                font-weight: 500;
+                line-height: 100px;
+            }
+        }
+    }
+
+    .milestones {
+        .title {
+            padding-bottom: 0;
+
+            h2 {
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 30px;
+            }
+        }
+
+        .scroll__bar .milesGrid {
+            width: 44%;
+            min-height: 200px;
+            margin-right: 20px;
+            padding: 40px;
+
+            h2 {
+                font-size: 43px;
+                font-weight: 600;
+                line-height: 33.804px;
+                letter-spacing: -0.648px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 24.314px;
+                letter-spacing: -0.422px;
+            }
+        }
+    }
+
+    .footer__section {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+
+        p {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+            text-align: center;
+            margin-bottom: 0;
+        }
+
+        ul {
+            font-size: 16.253px;
+            line-height: 16.817px;
+            letter-spacing: -0.244px;
+
+            li {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    footer.getstarted__footer {
+        position: relative;
+        min-height: 160px;
+
+        svg {
+            position: absolute;
+            /* top: 0; */
+            left: 0;
+            bottom: 38%;
+            width: 100%;
+        }
+    }
+
+
+
+    .primeply__featured {
+        .featured__grid {
+            overflow: hidden;
+
+            .featured__content {
+                padding: 25px;
+
+                h5 {
+                    font-size: 22px;
+                }
+            }
+
+            .featured__img {
+                img {
+                    min-height: 320px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+
+    .footer__bottom {
+        .footer__logo__section {
+            h2 {}
+        }
+    }
+
+    .wuudly__innerBanner h1 {
+        font-size: 55px;
+    }
+
+    .innerpage.wuudly__about {
+        h5:first-child {
+            margin-bottom: 40px;
+            padding-top: 0px;
+        }
+
+        .eco__friendly {
+            overflow: hidden;
+
+            .eco__content {
+                img {
+                    min-height: 530px;
+                    object-fit: cover;
+                }
+            }
+
+            .eco-responsibility {
+                padding: 0 !important;
+
+                h2 {
+                    font-size: 40px;
+                    line-height: 1.2;
+                    padding-bottom: 20px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                p {
+                    font-size: 25px;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+
+    .wuudly__products {
+        .products__tabs {
+            .tab__products {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto;
+                overflow-y: hidden;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        .product__descriptions {
+            .product__items {
+                .product__image {
+                    img {
+                        min-height: 660px;
+                    }
+                }
+
+                .product__details {
+                    padding-left: 0;
+
+                    h2 {
+                        font-size: 32px;
+                        line-height: 1.2;
+                    }
+
+                    h5 {
+                        font-size: 24px;
+                        line-height: 1.2;
+                        padding-top: 0;
+                    }
+                }
+
+                .navigation {
+                    top: -26px;
+                }
+
+                .product__logo {
+                    padding-bottom: 50px !important;
+                    padding-top: 50px;
+                    flex-direction: column;
+                    align-items: start !important;
+
+                    img {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .wuudly__vision {
+        h4 {
+            padding-bottom: 0;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 280px;
+            line-height: 1.3;
+        }
+
+        h2.mission {
+            font-size: 225px;
+            line-height: 1.3;
+        }
+
+        h5 {
+            padding-bottom: 0;
+        }
+
+        .our__ethos {
+            h2 {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .wuudly__innovation {
+        .banner__innovation {
+            height: 80vh;
+            background-position: top;
+        }
+
+        .gurjan-plywood {
+            h5 {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.3;
+                letter-spacing: -1.055px;
+                padding: 43px;
+            }
+        }
+    }
+
+    .primeply__gallery .gallery__grid img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .primeply__contact {
+        h2 {
+            font-size: 70px;
+            padding-bottom: 40px;
+        }
+
+        h4 {
+            font-size: 38px;
+        }
+
+        .whatsapp h3 {
+            font-size: 48px;
+            line-height: 1.3;
+        }
+    }
+
+
+    .footer__logo__section {
+        min-height: 60vh !important;
+    }
+
+    .main__header .menu__lists .menu__items .logo__menu img {
+        width: 100%;
+        padding-top: 30%;
+    }
+}
+
+
+/* 13 INCH SCREEN */
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+
+    .primeply__banner video {
+        width: 100%;
+        height: 100vh;
+    }
+
+
+    .col-tab-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .col-tab-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+
+    h3 {
+        font-size: 40px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+
+    .primeply__banner .banner__content h1 {
+        font-size: 150.574px;
+        line-height: 144.185px;
+        letter-spacing: -4.817px;
+    }
+
+    .primeply__featured {
+        .featured__grid {
+            overflow: hidden;
+
+            .featured__content {
+                padding: 42px;
+
+                h5 {
+                    font-size: 22px;
+                }
+            }
+
+            .featured__img {
+                img {
+                    min-height: 320px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+    }
+
+    .footer__bottom {
+        .footer__logo__section {
+            h2 {}
+        }
+    }
+
+    .wuudly__innerBanner h1 {
+        font-size: 55px;
+    }
+
+    .innerpage.wuudly__about {
+        h5:first-child {
+            margin-bottom: 40px;
+            padding-top: 0px;
+        }
+
+        .eco__friendly {
+            overflow: hidden;
+
+            .eco__content {
+                img {
+                    min-height: 530px;
+                    object-fit: cover;
+                }
+            }
+
+            .eco-responsibility {
+                padding: 0 !important;
+
+                h2 {
+                    font-size: 40px;
+                    line-height: 1.2;
+                    padding-bottom: 20px;
+
+                    br {
+                        display: none;
+                    }
+                }
+
+                p {
+                    font-size: 25px;
+                    line-height: 1.3;
+                }
+            }
+        }
+    }
+
+    .wuudly__products {
+        .products__tabs {
+            .tab__products {
+                display: flex !important;
+                flex-wrap: nowrap !important;
+                overflow-x: auto;
+                overflow-y: hidden;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+        }
+
+        .product__descriptions {
+            .product__items {
+
+
+                .product__details {
+                    padding-left: 0;
+
+                    h2 {
+                        font-size: 32px;
+                        line-height: 1.2;
+                    }
+
+                    h5 {
+                        font-size: 24px;
+                        line-height: 1.2;
+                        padding-top: 0;
+                    }
+                }
+
+                // .navigation {
+                //     top: -26px;
+                // }
+
+                .product__logo {
+                    // padding-bottom: 50px !important;
+                    // padding-top: 50px;
+
+                    img {
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .wuudly__vision {
+        h4 {
+            padding-bottom: 0;
+            line-height: 1.2;
+        }
+
+        h2 {
+            font-size: 445px;
+            line-height: 1.3;
+        }
+
+        h5 {
+            padding-bottom: 0;
+        }
+
+        .our__ethos {
+            h2 {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .wuudly__innovation {
+        .banner__innovation {
+            // height: 80vh;
+            background-position: top;
+        }
+
+        .gurjan-plywood {
+            h5 {
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 1.3;
+                letter-spacing: -1.055px;
+                padding: 43px;
+            }
+        }
+    }
+
+    .primeply__gallery .gallery__grid img {
+        width: 100%;
+        height: 310px;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .primeply__contact {
+        h2 {
+            font-size: 70px;
+            padding-bottom: 40px;
+        }
+
+        h4 {
+            font-size: 38px;
+        }
+
+        .whatsapp h3 {
+            font-size: 48px;
+            line-height: 1.3;
+        }
+    }
+
+    section.getStarted .main__banner h1 {
+        color: #000;
+        text-align: center;
+        font-size: 132px;
+        font-weight: 700;
+        line-height: 132px;
+        letter-spacing: -4.8px;
+        text-align: center;
+    }
+
+    .our__brands h2 {
+        font-size: 62px;
+        font-weight: 600;
+        line-height: 69.569px;
+        letter-spacing: -1.11px;
+    }
+
+    .guarantee h2 {
+        font-size: 99px;
+        font-weight: 700;
+        line-height: 100px;
+        letter-spacing: -5.655px;
+        padding-bottom: 70px;
+    }
+
+    .milestones .scroll__bar .milesGrid p {
+        font-size: 35px;
+        line-height: 42.946px;
+        letter-spacing: -0.63px;
+    }
+
+    .wuudly__vision h2.mission {
+        font-size: 360px !important;
+    }
+
+}
+
+@media only screen and (min-width: 1400px) {
+    .about__content {
+        width: 90%;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'primary';
+  src: url('../public/assets/fonts/NeueHaasDisplayLight.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'primary';
+  src: url('../public/assets/fonts/NeueHaasDisplayMediu.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'primary';
+  src: url('../public/assets/fonts/NeueHaasDisplayBold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'primary';
+  src: url('../public/assets/fonts/NeueHaasDisplayBlack.woff') format('woff');
+  font-weight: 700;
+}
+
+:root {
+  --color-primary: #FFCE69;
+  --font-primary: 'primary';
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+
+.text-right {
+  text-align: right;
+}
+
+h3 {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+}
+
+h4 {
+  font-size: 31px;
+  line-height: 1.4;
+  letter-spacing: -0.48px;
+}
+
+
+.btn {
+  padding: 10px 25px;
+}
+
+.btn-primary {
+  background-color: #000;
+  border: none;
+  border: 3px solid #000;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 600;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: transparent;
+    border: 3px solid #000;
+    color: #000;
+  }
+
+  &.btn:active {
+    background-color: var(--color-primary);
+    border: none;
+    border: 3px solid var(--color-primary);
+    border-radius: 100px;
+  }
+}
+
+.btn-primary.contact{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  min-width: 125px;
+  color: #fff;
+}
+.btn-primary.contact img{
+  opacity: 0;
+} 
+.btn-primary.contact:hover{
+  background-color:#000;
+  border: 3px solid #000;
+  color: #fff;
+}
+.btn-primary.contact img{
+  position: absolute;
+  margin-left: 5px;
+  height: 15px;
+  right: 21px;
+  transition: opacity .4s .25s, transform .6s .25s;
+    transition-timing-function: cubic-bezier(.1,.75,.25,1);
+    filter: brightness(0) invert(1) !important;
+}
+.btn-primary.contact:hover img{
+  opacity: 1;
+  /* display: block; */
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+  height: 15px;
+  right: 20px;
+  filter: brightness(0) invert(1) !important;
+}
+.btn-secondary {
+  background-color: transparent;
+  border: none;
+  border: 3px solid #000;
+  border-radius: 100px;
+  color: #000;
+  font-weight: 600;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: 3px solid #000;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: #000;
+    border: 3px solid #000;
+  }
+
+  &.btn:active {
+    background: var(--color-primary) !important;
+    outline: none;
+    color: #000;
+    box-shadow: none !important;
+    border: 3px solid #000;
+  }
+}
+
+
+
+
+.btn-rounded img{
+  height: 60px !important;
+}
+.btn-rounded {
+  color: #000;
+  font-weight: 600;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  img {
+    height: 30px;
+    padding: 2px;
+  }
+}
+.btn-rounded:focus{
+  box-shadow: none;
+}
+
+.form-control {
+  border-radius: 12px;
+  border: 2px solid #DDD;
+  min-height: 60px;
+  &:focus{
+    border: 2px solid #000;
+    box-shadow: none;
+    outline: none;
+  }
+}
+label{
+  font-size: 22px;
+font-weight: 300;
+line-height: 32px;
+letter-spacing: -0.33px;
+padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+.form-group span{
+  color: #dc3545;
+}
+/* General */
+section {
+  padding: 80px 0;
+}
+
+.btn-white {
+  background-color: transparent;
+  border: none;
+  border: 3px solid #fff;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 500;
+  padding: 10px 50px;
+  transition: all 0.2s ease;
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: 3px solid #fff;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: #000;
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-primary);
+    transition: all 0.2s ease;
+  }
+
+  &.btn:active {
+    background: var(--color-primary) !important;
+    outline: none;
+    color: #000;
+    box-shadow: none !important;
+    border: 3px solid var(--color-primary);
+  }
+}
+
+.btn-dark {
+  background-color: #000;
+  border: 3px solid #000;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 600;
+
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: 3px solid #000;
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: #000;
+    border: 3px solid #000;
+  }
+
+  &.btn:active {
+    background: var(--color-primary) !important;
+    outline: none;
+    color: #000;
+    box-shadow: none !important;
+    border: 3px solid #000;
+  }
+}
