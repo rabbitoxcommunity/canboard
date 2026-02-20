@@ -24,17 +24,17 @@ export default function PMission() {
                         </div>
                         <div className="col-md-6">
                             <div className="contents">
-                            <h2>Investing in People.</h2>
-                            <p>Our commitment to sustainability goes beyond products; it’s about the people who craft and use them. We invest in our team’s well-being and foster a culture of innovation. Building on a legacy of craftsmanship, we create designs that reflect the skill and dedication of our talented team.</p>
+                                <h2>Investing in People.</h2>
+                                <p>Our commitment to sustainability goes beyond products; it’s about the people who craft and use them. We invest in our team’s well-being and foster a culture of innovation. Building on a legacy of craftsmanship, we create designs that reflect the skill and dedication of our talented team.</p>
                             </div>
                         </div>
                     </div>
                     <div className="row align-items-center">
                         <div className="col-md-6">
-                          <div className="contents">
-                              <h2>Preserving Our Planet.</h2>
-                            <p>Every decision is made with the planet in mind. With responsibly sourced materials and efficient production processes, we act responsibly to minimize our environmental footprint. Our approach reflects our deep responsibility to the Earth, ensuring our products' longevity and their contribution to a more sustainable future.</p>
-                          </div>
+                            <div className="contents">
+                                <h2>Preserving Our Planet.</h2>
+                                <p>Every decision is made with the planet in mind. With responsibly sourced materials and efficient production processes, we act responsibly to minimize our environmental footprint. Our approach reflects our deep responsibility to the Earth, ensuring our products' longevity and their contribution to a more sustainable future.</p>
+                            </div>
                         </div>
                         <div className="col-md-6 px-0">
                             <img src="/assets/panelex/mission2.jpg" alt="" />

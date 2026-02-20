@@ -1,69 +1,4 @@
 .main__header {
-  &.panelex__header {
-    .btn-primary{
-      background-color: var(--color-primary);
-      border-color: var(--color-primary) ;
-      color: #000;
-      img{
-         filter: brightness(0) saturate(100%) !important;
-      }
-    }
-    .header .navbar .menu-toggle .line {
-      background-color: #000 !important;
-    }
-
-    &.header_white {
-      .header .navbar .menu-toggle .line {
-        background-color: #fff !important;
-      }
-
-      .header.sticked {
-        .logo img {
-          filter: brightness(0) saturate(100%) !important
-        }
-
-        .navbar .menu-toggle .line {
-          background-color: #000 !important;
-        }
-      }
-
-      .logo img {
-        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%) !important;
-      }
-    }
-
-    &.show {
-      .header {
-        filter: brightness(0) saturate(100%);
-      }
-    }
-
-    .header {
-      .logo img {
-        width: 200px;
-      }
-    }
-
-    .menu__lists {
-      background-color: var(--color-primary);
-
-      .logo__menu {
-        padding-top: 100px !important;
-        padding-bottom: 30px;
-      }
-
-      .menu__items .logo__menu img {
-        width: 100%;
-        filter: none !important;
-      }
-
-      .menu__items ul li a {
-        color: #000;
-        text-decoration: none;
-      }
-    }
-
-  }
 
   .header {
     transition: all 0.5s;
@@ -132,7 +67,7 @@
       }
 
       img {
-        width: 150px;
+        width: 225px;
       }
     }
 

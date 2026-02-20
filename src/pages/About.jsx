@@ -7,9 +7,9 @@ import Aos from 'aos';
 
 export default function PAbout() {
   const swiperRef = useRef(null);
-    useEffect(function () {
-      Aos.init({ duration: 2000 });
-    }, []);
+  useEffect(function () {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <section className="panelex__about">
@@ -52,7 +52,7 @@ export default function PAbout() {
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
                 className="mySwiper"
                 breakpoints={{
-                   1200: {
+                  1200: {
                     slidesPerView: 3,
                   },
                   1024: {
@@ -87,40 +87,40 @@ export default function PAbout() {
                 <SwiperSlide>
                   <div className="Grid">
                     <h4>1990</h4>
-                     <p>Resin Plant</p>
+                    <p>Resin Plant</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="Grid">
                     <h4>2000</h4>
-                   <p>Hospitality: <br />Malabar Residency</p>
+                    <p>Hospitality: <br />Malabar Residency</p>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="Grid">
                     <h4>2001</h4>
-                     <p>Second Plywood Facility</p>
+                    <p>Second Plywood Facility</p>
                   </div>
                 </SwiperSlide>
-                 <SwiperSlide>
+                <SwiperSlide>
                   <div className="Grid">
                     <h4>2004</h4>
                     <p>Veneering Factory at Myanmar</p>
                   </div>
                 </SwiperSlide>
-                 <SwiperSlide>
+                <SwiperSlide>
                   <div className="Grid">
                     <h4>2010</h4>
-                     <p>Third Plywood Facility</p>
+                    <p>Third Plywood Facility</p>
                   </div>
                 </SwiperSlide>
-                 <SwiperSlide>
+                <SwiperSlide>
                   <div className="Grid">
                     <h4>2010</h4>
-                     <p>Real Estate: <br /> Woodshade Builders</p>
+                    <p>Real Estate: <br /> Woodshade Builders</p>
                   </div>
                 </SwiperSlide>
-                 <SwiperSlide>
+                <SwiperSlide>
                   <div className="Grid">
                     <h4>2024</h4>
                     <p>Particle Board Unit</p>

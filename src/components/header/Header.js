@@ -9,10 +9,10 @@ export default function Header() {
   const location = useLocation()
 
   useEffect(() => {
-    if (location.pathname == '/home') {
+    if (location.pathname == '/') {
       sethomePage(true)
       setmenuActive(false)
-    }else{
+    } else {
       sethomePage(false)
       setmenuActive(false)
     }
@@ -41,20 +41,20 @@ export default function Header() {
   return (
     <>
       <div className={`main__header ${menuActive ? 'show' : ''}`}>
-        <header id="header" className={`header d-flex align-items-center fixed-top ${isScrolledDown ? 'sticked' : ''} ${homePage ? '' : menuActive ? '' : 'bg-white'}`}>
+        <header id="header" className={`header d-flex align-items-center fixed-top ${isScrolledDown ? 'sticked' : ''}`}>
           <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <Link to='/home' className={`logo d-flex align-items-center ${homePage ? 'logo-home' : ''}`}>
+            <Link to='/' className={`logo d-flex align-items-center ${homePage ? 'logo-home' : ''}`}>
               <img src="assets/img/logo.svg" alt="" />
             </Link>
 
             <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav className="navbar">
-            <Link to='/contact' style={{textDecoration:'none'}}> <div className="contact btn btn-primary hidden-xs">Contact <img src="assets/img/menubtn-arrow.svg" alt="" /></div></Link>
-  
+              <Link to='/contact' style={{ textDecoration: 'none' }}> <div className="contact btn btn-primary hidden-xs">Contact <img src="assets/img/menubtn-arrow.svg" alt="" /></div></Link>
+
               <div className={`menu-toggle ${menuActive ? 'active' : ''}`} onClick={handleMenu}>
-                <div className={`line ${ homePage && 'home-line'}`}></div>
-                <div className={`line ${ homePage && 'home-line'}`} ></div>
+                <div className={`line ${homePage && 'home-line'}`}></div>
+                <div className={`line ${homePage && 'home-line'}`} ></div>
               </div>
             </nav>
           </div>
@@ -64,19 +64,19 @@ export default function Header() {
         <div className={`menu__lists ${menuActive ? 'show' : ''}`}>
           <div className="container">
             <div className="menu__items">
-            <ul>
-              <li><Link to='/about'>About</Link></li>
-              <li><Link to='/products'>Product</Link></li>
-              <li><Link to='/vision'>Vision</Link></li>
-              <li><Link to='/innovation'>Innovation</Link></li>
-              <li><Link to='/gallery'>Gallery</Link></li>
-              <li><Link to='/contact'>contact</Link></li>
-            </ul>
-            <div className="logo__menu">
-              <img src="assets/img/logo.svg" alt="" />
+              <ul>
+                <li><Link to='/about'>About</Link></li>
+                <li><Link to='/products'>Product</Link></li>
+                <li><Link to='/vision'>Vision</Link></li>
+                <li><Link to='/innovation'>Innovation</Link></li>
+                <li><Link to='/gallery'>Gallery</Link></li>
+                <li><Link to='/contact'>contact</Link></li>
+              </ul>
+              <div className="logo__menu">
+                <img src="assets/img/logo.svg" alt="" />
+              </div>
             </div>
-            </div>
-           
+
           </div>
         </div>
 
