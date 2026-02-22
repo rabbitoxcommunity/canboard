@@ -1,6 +1,12 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import AOS from 'aos';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/effect-fade';
+import 'swiper/css/navigation';
 
 const productData = {
     europa: {
@@ -50,8 +56,32 @@ const features = [
     }
 ];
 
+const trustData = [
+    {
+        img: "/assets/img/canboard/product-slide1.png",
+        title: `Living Spaces`,
+        desc: "Designed for furniture, storage and cabinetry where surface finish and everyday durability matter."
+    },
+    {
+        img: "/assets/img/canboard/product-slide2.png",
+        title: "Office Spaces",
+        desc: "Suitable for workstations, storage units, and furniture that demand structural stability under frequent use."
+    },
+    {
+        img: "/assets/img/canboard/product-slide4.png",
+        title: "Educational Spaces",
+        desc: "Well suited for interiors where safety, durability, and low-emission materials are essential."
+    },
+    {
+        img: "/assets/img/canboard/product-slide3.jpg",
+        title: "Retail Spaces",
+        desc: "Ideal for displays, counters, and fixtures that require  consistency, strength, and long-term wear resistance."
+    }
+];
+
 export default function Products() {
     const { id } = useParams();
+    const trustSwiperRef = useRef(null);
     const product = productData[id] || productData.europa;
 
     useEffect(() => {
@@ -74,7 +104,7 @@ export default function Products() {
             </section>
 
             <section className="product__description__section">
-                <div className="container">
+                <div className="sm-container">
                     <div className="row">
                         <div className="col-lg-9 mb-5">
                             <p className="long-desc" data-aos="fade-up">{product.longDesc}</p>
@@ -86,20 +116,89 @@ export default function Products() {
                             <p data-aos="fade-up" data-aos-delay="100">Built to remain stable, reliable, and consistent <br /> through daily interior use.</p>
                         </div>
                     </div>
-
-                    <div className="features-grid">
-                        <div className="row g-0">
-                            {features.map((feature, index) => (
-                                <div className="col-md-4 feature-item" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
-                                    <div className="feature-content">
-                                        <div className="icon-wrapper">
-                                            <img src={feature.icon} alt={feature.title} />
-                                        </div>
-                                        <h3>{feature.title}</h3>
-                                        <p>{feature.desc}</p>
+                </div>
+                <div className="features-grid">
+                    <div className="row g-0">
+                        {features.map((feature, index) => (
+                            <div className="col-md-4 feature-item" key={index} data-aos="fade-up" data-aos-delay={index * 100}>
+                                <div className="feature-content">
+                                    <div className="icon-wrapper">
+                                        <img src={feature.icon} alt={feature.title} />
+                                    </div>
+                                    <h3>{feature.title}</h3>
+                                    <p>{feature.desc}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+            <section className="panelex__trust" data-aos="fade-up">
+                <div className="container-fluid pe-0">
+                    <div className="sm-container d-flex justify-content-between align-items-end mb-5 header-row">
+                        <h2 data-aos="fade-in">Built to Last Across <br /> Interior Spaces</h2>
+                        <div className="navigation d-flex gap-3">
+                            <div
+                                className="nav-btn prev-btn"
+                                onClick={() => trustSwiperRef.current?.slidePrev()}
+                            >
+                                <img
+                                    src="/assets/img/products/arrow.svg"
+                                    alt="Previous"
+                                    style={{ transform: 'rotate(180deg)' }}
+                                />
+                            </div>
+                            <div
+                                className="nav-btn next-btn"
+                                onClick={() => trustSwiperRef.current?.slideNext()}
+                            >
+                                <img
+                                    src="/assets/img/products/arrow.svg"
+                                    alt="Next"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <Swiper
+                        spaceBetween={30}
+                        slidesPerView={1.2}
+                        onSwiper={(swiper) => (trustSwiperRef.current = swiper)}
+                        breakpoints={{
+                            640: {
+                                slidesPerView: 1.2,
+                            },
+                            768: {
+                                slidesPerView: 1.5,
+                            },
+                            1024: {
+                                slidesPerView: 1.3,
+                            },
+                        }}
+                        className="trustSwiper ml-5 ms-5"
+                    >
+                        {trustData.map((item, index) => (
+                            <SwiperSlide key={index}>
+                                <div className="trust-card d-flex">
+                                    <div className="image-wrapper">
+                                        <img src={item.img} alt={item.title} />
+                                    </div>
+                                    <div className="content-wrapper">
+                                        <h3>{item.title}</h3>
+                                        <p>{item.desc}</p>
                                     </div>
                                 </div>
-                            ))}
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
+            </section>
+            <section className="panelex__help-cta" data-aos="fade-up">
+                <div className="container">
+                    <div className="row justify-content-center text-center">
+                        <div className="col-lg-8">
+                            <h2>Need help choosing <br /> the right board?</h2>
+                            <p>Share your requirement and we’ll help you find <br /> the right solution</p>
+                            <a href="/contact" className="btn-touch">Get in Touch</a>
                         </div>
                     </div>
                 </div>

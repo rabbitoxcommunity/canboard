@@ -57,8 +57,8 @@ export default function PContact() {
                 <div className="row justify-content-between">
                     <div className="col-md-6">
                         <ul>
-                            <li>+91 97460 41799</li>
-                            <li>panelex@primeply.in</li>
+                            <li>+91 9895 112 233</li>
+                            <li>info@canboard.in</li>
                         </ul>
                     </div>
                     <div className="col-md-6">
@@ -66,7 +66,7 @@ export default function PContact() {
                             <div className="forms">
 
                                 <div className="form-group">
-                                     <input type="hidden" name="website" value="Panelex" />
+                                    <input type="hidden" name="website" value="Panelex" />
                                     <label htmlFor="">Name</label>
                                     <input type="text" className='form-control' name='name' {...register("name", { required: true })} />
                                     {errors.name && <span>Please enter name</span>}
