@@ -14,6 +14,25 @@ import 'swiper/css/navigation';
 export default function PHome() {
 
   const swiperRef = useRef(null);
+  const trustSwiperRef = useRef(null);
+
+  const trustData = [
+    {
+      img: "/assets/img/canboard/2.png",
+      title: `Handles Moisture with Ease`,
+      desc: "Absorbs up to 60% less water than standard particle boards, helping maintain strength and stability."
+    },
+    {
+      img: "/assets/img/canboard/3.jpg",
+      title: "Handles Moisture with Ease",
+      desc: "Absorbs up to 60% less water than standard particle boards, helping maintain strength and stability."
+    },
+    {
+      img: "/assets/img/canboard/3.jpg",
+      title: "Handles Moisture with Ease",
+      desc: "Absorbs up to 60% less water than standard particle boards, helping maintain strength and stability."
+    }
+  ];
   useEffect(function () {
     Aos.init({ duration: 2000 });
   }, []);
@@ -92,14 +111,14 @@ export default function PHome() {
       {/* <Outlet /> */}
       <section className="p-0 panelex__banner">
         <img src="/assets/panelex/banner.jpg" alt="" />
-        <div className="banner__content">
+        <div className="banner__content sm-container">
           <h1 ref={headingRef}>Smartest engineered wood <br /> for everyday interiors.</h1>
           <p data-aos="fade-up">Build to perform through heat, humidity, and <br />everyday moisture in indian conditions.</p>
         </div>
       </section>
 
       <section className="panelex__categories" data-aos="fade-up">
-        <div className="container">
+        <div className="sm-container">
           <div className="col-md-6">
             <h2 data-aos="fade-in">Why is Canboard the Smart Choice?</h2>
             <p data-aos="fade-in">Canboard is an advanced HMR engineered wood board designed for interiors exposed to moisture, humidity and frequent use. It retains its strength and shape over time, making it suitable for kitchens, workspaces, storage and commercial settings.</p>
@@ -108,63 +127,105 @@ export default function PHome() {
 
         </div>
       </section>
-      <section className="panelex__future">
-        <img src="/assets/panelex/future.png" alt="" />
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6">
-              <div className="grid">
-                <h2 data-aos="fade-up">This is what the<br />
-                  future looks like</h2>
-                <p data-aos="fade-up">Made from sustainably sourced wood fibers and recycled materials, our pre-laminated boards help reduce waste and environmental impact—without compromising on quality or aesthetics. Every panel is a step toward smarter spaces and a cleaner planet—because the future of design should be as sustainable as it is beautiful.</p>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="grid end">
-                <Link to={'/panelex/mission'}><button className='btn btn-white' data-aos="fade-in">Find out how we do it</button></Link>
 
+      <section className="panelex__trust" data-aos="fade-up">
+        <div className="container-fluid pe-0">
+          <div className="sm-container d-flex justify-content-between align-items-end mb-5 header-row">
+            <h2 data-aos="fade-in">Why People Trust <br /> Canboard?</h2>
+            <div className="navigation d-flex gap-3">
+              <div
+                className="nav-btn prev-btn"
+                onClick={() => trustSwiperRef.current?.slidePrev()}
+              >
+                <img
+                  src="/assets/img/products/arrow.svg"
+                  alt="Previous"
+                  style={{ transform: 'rotate(180deg)' }}
+                />
+              </div>
+              <div
+                className="nav-btn next-btn"
+                onClick={() => trustSwiperRef.current?.slideNext()}
+              >
+                <img
+                  src="/assets/img/products/arrow.svg"
+                  alt="Next"
+                />
               </div>
             </div>
           </div>
+          <Swiper
+            spaceBetween={30}
+            slidesPerView={1.2}
+            onSwiper={(swiper) => (trustSwiperRef.current = swiper)}
+            breakpoints={{
+              640: {
+                slidesPerView: 1.2,
+              },
+              768: {
+                slidesPerView: 1.5,
+              },
+              1024: {
+                slidesPerView: 1.3,
+              },
+            }}
+            className="trustSwiper ml-5 ms-5"
+          >
+            {trustData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="trust-card d-flex">
+                  <div className="image-wrapper">
+                    <img src={item.img} alt={item.title} />
+                  </div>
+                  <div className="content-wrapper">
+                    <h3>{item.title}</h3>
+                    <p>{item.desc}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </section>
 
-      <section className="panelex__teak">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-4">
-              <Link to='/panelex/products'>
-                <div className="grid" data-aos="fade-up" data-aos-duration="1000">
-                  <img src="https://ik.imagekit.io/brunchnasser/Elite/PP1135%20Coach%20Wood%20Medium.png?updatedAt=1749487328733" alt="" />
-                  <h4>PP1135</h4>
-                  <p>Coach Wood Medium</p>
+      <section className="panelex__offerings" data-aos="fade-up">
+        <div className="sm-container">
+          <h2 data-aos="fade-in">Canboard Offerings</h2>
+        </div>
+        <div className="container-fluid">
+          <div className="mx-5">
+            <div className="row offerings-grid">
+              <div className="col-md-6 mb-4">
+                <div className="offering-card" data-aos="fade-up">
+                  <div className="card-top">
+                    <h3>Europa</h3>
+                    <p>Laminated HMR boards with high-quality <br /> European décor papers.</p>
+                    <Link to="/panelex/products" className="btn-explore">Explore Europa</Link>
+                  </div>
+                  <div className="card-img">
+                    <img src="/assets/img/canboard/4.png" alt="Europa" />
+                  </div>
                 </div>
-              </Link>
-            </div>
-            <div className="col-md-4">
-              <Link to='/panelex/products'>
-                <div className="grid" data-aos="fade-up" data-aos-duration="2000">
-                  <img src="https://ik.imagekit.io/brunchnasser/Earth/PP1102%20Earth%20Series%20Supreme.png?updatedAt=1749488911980" alt="" />
-                  <h4>PP1102</h4>
-                  <p>Earth Series Supreme</p>
+              </div>
+              <div className="col-md-6 mb-4">
+                <div className="offering-card" data-aos="fade-up" data-aos-delay="150">
+                  <div className="card-top">
+                    <h3>Indus</h3>
+                    <p>Laminated HMR boards with premium, <br /> high-quality décor papers.</p>
+                    <Link to="/panelex/products" className="btn-explore">Explore Indus</Link>
+                  </div>
+                  <div className="card-img">
+                    <img src="/assets/img/canboard/4.png" alt="Indus" />
+                  </div>
                 </div>
-              </Link>
-            </div>
-            <div className="col-md-4">
-              <Link to='/panelex/products'>
-                <div className="grid" data-aos="fade-up" data-aos-duration="3000">
-                  <img src="/assets/panelex/Thai Teak1.png" alt="" />
-                  <h4>731 - Wenge</h4>
-                  <p>Suede (SUD)</p>
-                </div>
-              </Link>
-            </div>
-            <div className="col-md-12 text-center" data-aos="fade-in" data-aos-duration="3000">
-              <Link to='/panelex/products'> <button className="btn btn-secondary">View All</button></Link>
+              </div>
             </div>
           </div>
+
         </div>
       </section>
+
+
 
       <section className="panelex__manifature" style={{ backgroundImage: 'url(assets/panelex/process.png)' }}>
         <div className="container">
