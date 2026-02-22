@@ -73,7 +73,7 @@ section.product__banner {
         }
 
         p {
-            font-family: Neue Haas Grotesk Display Pro;
+            font-family: var(--font-primary);
             font-weight: 500;
             font-style: 55 Roman;
             font-size: 35.31px;
@@ -150,8 +150,8 @@ section.product__description__section {
         margin-bottom: 80px;
 
         h2 {
-            font-family: Neue Haas Grotesk Display Pro;
-            font-weight: 700;
+            font-family: var(--font-primary);
+            font-weight: 600;
             font-style: 75 Bold;
             font-size: 68px;
             leading-trim: NONE;
@@ -864,7 +864,7 @@ section.product__lists {
         margin-bottom: 25px;
 
         label {
-            font-family: Neue Haas Grotesk Display Pro;
+            font-family: var(--font-primary);
             font-weight: 600;
             font-style: 65 Medium;
             font-size: 15.89px;
@@ -883,7 +883,7 @@ section.product__lists {
             font-size: 18px;
             height: auto;
             color: #000;
-            font-family: Neue Haas Grotesk Display Pro;
+            font-family: var(--font-primary);
             font-weight: 400;
 
             &::placeholder {
@@ -941,7 +941,7 @@ section.product__lists {
         }
 
         label {
-            font-family: Neue Haas Grotesk Display Pro;
+            font-family: var(--font-primary);
             font-weight: 500;
             font-size: 18px;
             color: #000;
@@ -955,7 +955,7 @@ section.product__lists {
         border: 2px solid #000;
         border-radius: 100px;
         padding: 14px 50px;
-        font-family: Neue Haas Grotesk Display Pro;
+        font-family: var(--font-primary);
         font-weight: 600;
         font-size: 18px;
         color: #000;
@@ -1071,7 +1071,7 @@ section.panelex__trust {
             }
 
             p {
-                font-family: Neue Haas Grotesk Display Pro;
+                font-family: var(--font-primary);
                 font-weight: 500;
                 font-style: 55 Roman;
                 font-size: 24px;
@@ -1088,7 +1088,7 @@ section.panelex__help-cta {
     background-color: #F1F1EC;
 
     h2 {
-        font-family: Neue Haas Grotesk Display Pro;
+        font-family: var(--font-primary);
         font-weight: 700;
         font-style: 75 Bold;
         font-size: 68px;
@@ -1099,7 +1099,7 @@ section.panelex__help-cta {
     }
 
     p {
-        font-family: Neue Haas Grotesk Display Pro;
+        font-family: var(--font-primary);
         font-weight: 400;
         font-style: 55 Roman;
         font-size: 24px;
@@ -1115,7 +1115,7 @@ section.panelex__help-cta {
         border: 2px solid #000;
         border-radius: 50px;
         color: #000;
-        font-family: Neue Haas Grotesk Display Pro;
+        font-family: var(--font-primary);
         font-weight: 600;
         font-size: 20px;
         text-decoration: none;
