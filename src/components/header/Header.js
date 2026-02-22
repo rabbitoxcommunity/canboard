@@ -9,7 +9,7 @@ export default function Header() {
   const location = useLocation()
 
   useEffect(() => {
-    if (location.pathname == '/') {
+    if (location.pathname == '/' || location.pathname == '/mission') {
       sethomePage(true)
       setmenuActive(false)
     } else {
@@ -67,9 +67,7 @@ export default function Header() {
               <ul>
                 <li><Link to='/about'>About</Link></li>
                 <li><Link to='/products'>Product</Link></li>
-                <li><Link to='/vision'>Vision</Link></li>
-                <li><Link to='/innovation'>Innovation</Link></li>
-                <li><Link to='/gallery'>Gallery</Link></li>
+                <li><Link to='/mission'>Mission</Link></li>
                 <li><Link to='/contact'>contact</Link></li>
               </ul>
               <div className="logo__menu">
