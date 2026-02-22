@@ -263,7 +263,7 @@ export default function PHome() {
                   <div className="card-top">
                     <h3>Europa</h3>
                     <p>Laminated HMR boards with high-quality <br /> European décor papers.</p>
-                    <Link to="/panelex/products" className="btn-explore">Explore Europa</Link>
+                    <Link to="/panelex/products/europa" className="btn-explore">Explore Europa</Link>
                   </div>
                   <div className="card-img">
                     <img src="/assets/img/canboard/4.png" alt="Europa" />
@@ -275,7 +275,7 @@ export default function PHome() {
                   <div className="card-top">
                     <h3>Indus</h3>
                     <p>Laminated HMR boards with premium, <br /> high-quality décor papers.</p>
-                    <Link to="/panelex/products" className="btn-explore">Explore Indus</Link>
+                    <Link to="/panelex/products/indus" className="btn-explore">Explore Indus</Link>
                   </div>
                   <div className="card-img">
                     <img src="/assets/img/canboard/4.png" alt="Indus" />
