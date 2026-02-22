@@ -55,7 +55,7 @@ export default function PContact() {
                         we’ll be in touch soon.</h1>
                 </div>
                 <div className="row justify-content-between">
-                    <div className="col-md-6">
+                    <div className="col-md-5">
                         <ul>
                             <li>+91 9895 112 233</li>
                             <li>info@canboard.in</li>

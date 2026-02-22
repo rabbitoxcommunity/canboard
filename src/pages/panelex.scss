@@ -860,10 +860,119 @@ section.product__lists {
     }
 
     .form-group {
-        margin-right: 80px;
+        margin-right: 0;
+        margin-bottom: 25px;
+
+        label {
+            font-family: Neue Haas Grotesk Display Pro;
+            font-weight: 600;
+            font-style: 65 Medium;
+            font-size: 15.89px;
+            line-height: 23.11px;
+            letter-spacing: -1.5%;
+            vertical-align: middle;
+            margin-bottom: 5px;
+            color: #000;
+        }
 
         .form-control {
-            background-color: transparent;
+            background-color: #F8F6F1;
+            border: 1.5px solid #EAEAEA;
+            border-radius: 12px;
+            padding: 16px 20px;
+            font-size: 18px;
+            height: auto;
+            color: #000;
+            font-family: Neue Haas Grotesk Display Pro;
+            font-weight: 400;
+
+            &::placeholder {
+                color: #B2B2B2;
+                font-weight: 300;
+            }
+
+            &:focus {
+                border-color: #000;
+                box-shadow: none;
+                background-color: #F8F6F1;
+            }
+        }
+
+        textarea.form-control {
+            border-radius: 12px;
+            resize: none;
+        }
+
+        span {
+            color: #dc3545;
+            font-size: 14px;
+            margin-top: 5px;
+            display: block;
+        }
+    }
+
+    .consent-check {
+        input[type="checkbox"] {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background-color: #F8F6F1;
+            border: 1.5px solid #EAEAEA;
+            cursor: pointer;
+            appearance: none;
+            position: relative;
+            flex-shrink: 0;
+            transition: all 0.2s ease;
+
+            &:checked {
+                background-color: #000;
+                border-color: #000;
+
+                &::after {
+                    content: '✓';
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 22px;
+                }
+            }
+        }
+
+        label {
+            font-family: Neue Haas Grotesk Display Pro;
+            font-weight: 500;
+            font-size: 18px;
+            color: #000;
+            line-height: 1.25;
+            max-width: 480px;
+        }
+    }
+
+    .submit-btn {
+        background-color: transparent;
+        border: 2px solid #000;
+        border-radius: 100px;
+        padding: 14px 50px;
+        font-family: Neue Haas Grotesk Display Pro;
+        font-weight: 600;
+        font-size: 18px;
+        color: #000;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
         }
     }
 }
@@ -2211,6 +2320,39 @@ section.panelex__help {
 
     .panalex__contact .form-group {
         margin-right: 0;
+
+        label {
+            font-size: 16px;
+        }
+
+        .form-control {
+            font-size: 16px;
+            padding: 12px 15px;
+        }
+    }
+
+    .panalex__contact {
+        .consent-check {
+            input[type="checkbox"] {
+                width: 35px;
+                height: 35px;
+            }
+
+            label {
+                font-size: 15px;
+            }
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px 30px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .text-end {
+            text-align: left !important;
+        }
     }
 
     section.panelex__mission {
