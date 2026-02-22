@@ -6,15 +6,18 @@ export default function Header() {
   const [isScrolledDown, setIsScrolledDown] = useState(false);
   const [homePage, sethomePage] = useState(false)
   const [menuActive, setmenuActive] = useState(false)
+  const [productSubmenu, setProductSubmenu] = useState(false)
   const location = useLocation()
 
   useEffect(() => {
     if (location.pathname == '/' || location.pathname == '/mission') {
       sethomePage(true)
       setmenuActive(false)
+      setProductSubmenu(false)
     } else {
       sethomePage(false)
       setmenuActive(false)
+      setProductSubmenu(false)
     }
   }, [location.pathname])
 
@@ -35,6 +38,12 @@ export default function Header() {
 
   const handleMenu = () => {
     setmenuActive(!menuActive)
+    if (menuActive) setProductSubmenu(false)
+  }
+
+  const toggleProductSubmenu = (e) => {
+    e.preventDefault();
+    setProductSubmenu(!productSubmenu);
   }
 
 
@@ -64,14 +73,28 @@ export default function Header() {
         <div className={`menu__lists ${menuActive ? 'show' : ''}`}>
           <div className="container">
             <div className="menu__items">
-              <ul>
-                <li><Link to='/about'>About</Link></li>
-                <li><Link to='/products'>Product</Link></li>
-                <li><Link to='/mission'>Mission</Link></li>
-                <li><Link to='/contact'>contact</Link></li>
-              </ul>
+              {!productSubmenu ? (
+                <ul className="main-nav-list">
+                  <li data-aos="fade-up" data-aos-delay="100"><Link to='/about' onClick={handleMenu}>About</Link></li>
+                  <li data-aos="fade-up" data-aos-delay="200" className="has-submenu">
+                    <a href="#" onClick={toggleProductSubmenu}>Products</a>
+                  </li>
+                  <li data-aos="fade-up" data-aos-delay="300"><Link to='/mission' onClick={handleMenu}>Mission</Link></li>
+                  <li data-aos="fade-up" data-aos-delay="400"><Link to='/contact' onClick={handleMenu}>Contact</Link></li>
+                </ul>
+              ) : (
+                <div className="submenu-view">
+                  <div className="back-arrow" onClick={toggleProductSubmenu}>
+                    <img src="/assets/img/canboard/menu-back.svg" alt="Back" />
+                  </div>
+                  <ul className="submenu-list">
+                    <li data-aos="fade-up" data-aos-delay="100"><Link to='/panelex/products/europa' onClick={handleMenu}>Europa</Link></li>
+                    <li data-aos="fade-up" data-aos-delay="200"><Link to='/panelex/products/indus' onClick={handleMenu}>Indus</Link></li>
+                  </ul>
+                </div>
+              )}
               <div className="logo__menu">
-                <img src="assets/img/logo.svg" alt="" />
+                <img src="/assets/img/logo.svg" alt="Canboard" />
               </div>
             </div>
 

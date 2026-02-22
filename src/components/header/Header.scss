@@ -194,6 +194,37 @@
         }
       }
 
+      .submenu-view {
+        padding-top: 150px;
+        text-align: left;
+
+        .back-arrow {
+          display: inline-block;
+          cursor: pointer;
+          transition: opacity 0.3s ease;
+
+          &:hover {
+            opacity: 0.7;
+          }
+
+          img {
+            width: 40px;
+            height: 40px;
+            display: block;
+          }
+        }
+
+        ul {
+          padding-top: 30px !important;
+
+          li {
+            font-size: 85px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+          }
+        }
+      }
+
       .logo__menu {
         padding-top: 0px;
         padding-bottom: 30px;
