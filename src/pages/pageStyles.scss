@@ -203,52 +203,52 @@ section.getStarted {
     }
 }
 
-.panelex__banner {
-    position: relative;
+// .panelex__banner {
+//     position: relative;
 
-    &::after {
-        content: "";
-        background-color: rgba(0, 0, 0, 0.2);
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
+//     &::after {
+//         content: "";
+//         background-color: rgba(0, 0, 0, 0.2);
+//         position: absolute;
+//         left: 0;
+//         top: 0;
+//         width: 100%;
+//         height: 100%;
+//         z-index: 1;
+//     }
 
-    img {
-        width: 100%;
-        height: 100vh;
-        object-fit: cover;
-        object-position: center;
-    }
+//     img {
+//         width: 100%;
+//         height: 100vh;
+//         object-fit: cover;
+//         object-position: center;
+//     }
 
-    .banner__content {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        max-width: 80%;
-        z-index: 2;
+//     .banner__content {
+//         position: absolute;
+//         top: 50%;
+//         left: 0;
+//         right: 0;
+//         margin: 0 auto;
+//         max-width: 80%;
+//         z-index: 2;
 
-        // transform: translate(-50%,-50%);
-        h1 {
-            color: #fff;
-            font-size: 80px;
-            line-height: 1.1;
-            font-family: var(--font-primary);
-        }
+//         // transform: translate(-50%,-50%);
+//         h1 {
+//             color: #fff;
+//             font-size: 80px;
+//             line-height: 1.1;
+//             font-family: var(--font-primary);
+//         }
 
-        p {
-            color: #fff;
-            font-size: 44px;
-            line-height: 1.1;
-            font-family: var(--font-primary);
-        }
-    }
-}
+//         p {
+//             color: #fff;
+//             font-size: 44px;
+//             line-height: 1.1;
+//             font-family: var(--font-primary);
+//         }
+//     }
+// }
 
 .primeply__banner {
     position: relative;

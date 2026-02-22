@@ -1,23 +1,23 @@
 @media only screen and (max-width: 600px) {
 
-    .panelex__banner {
-        .banner__content {
-            top: 50%;
-                    left: 20px;
-        }
+    //     .panelex__banner {
+    //         .banner__content {
+    //             top: 50%;
+    //                     left: 20px;
+    //         }
 
-        &::after {
-            height: 75vh;
-        }
+    //         &::after {
+    //             height: 75vh;
+    //         }
 
-        img {
-            height: 75vh;
-        }
+    //         img {
+    //             height: 75vh;
+    //         }
 
-        .banner__content h1 {
-            font-size: 50px;
-        }
-    }
+    //         .banner__content h1 {
+    //             font-size: 50px;
+    //         }
+    //     }
 
     // .container {
     //     width: 90% !important;
@@ -43,12 +43,6 @@
         padding-bottom: 10px;
     }
 
-    p,
-    li,
-    a {
-        // font-weight: 400 !important;
-        // letter-spacing: -0.722px !important;
-    }
 
     .sm-reverse {
         flex-direction: column-reverse;
@@ -690,16 +684,19 @@
 /* IPAD PRO */
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-    .panelex__banner .banner__content{
+    .panelex__banner .banner__content {
         left: 20px;
     }
+
     .panelex__about {
-    min-height: 43dvh !important;
+        min-height: 43dvh !important;
     }
+
     section.panelex__categories .scroll-container .Grid img {
         height: 240px !important;
     }
-    .panelex__banner .banner__content h1{
+
+    .panelex__banner .banner__content h1 {
         font-size: 80px;
     }
 

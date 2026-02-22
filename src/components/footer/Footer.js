@@ -28,8 +28,8 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer__logo">
-              <p className='panelex'>© Copyright {year} Panelex</p>
-              <img src="/assets/panelex/logo1.png" alt="" />
+              <p className='panelex'>© Copyright {year} Canboard</p>
+              <img src="/assets/img/logo-footer.svg" alt="" />
             </div>
           </div>
         </div>
