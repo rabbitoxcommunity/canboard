@@ -174,7 +174,7 @@ export default function Products() {
                                 slidesPerView: 1.3,
                             },
                         }}
-                        className="trustSwiper ml-5 ms-5"
+                        className="trustSwiper ml-1 ml-md-5 ms-1 ms-md-5"
                     >
                         {trustData.map((item, index) => (
                             <SwiperSlide key={index}>

@@ -232,7 +232,7 @@ export default function PHome() {
                 slidesPerView: 1.3,
               },
             }}
-            className="trustSwiper ml-5 ms-5"
+            className="trustSwiper ml-5 ms-1 ms-md-5"
           >
             {trustData.map((item, index) => (
               <SwiperSlide key={index}>
@@ -256,7 +256,7 @@ export default function PHome() {
           <h2 data-aos="fade-in">Canboard Offerings</h2>
         </div>
         <div className="container-fluid">
-          <div className="mx-5">
+          <div className="mx-2 mx-md-5">
             <div className="row offerings-grid">
               <div className="col-md-6 mb-4">
                 <div className="offering-card" data-aos="fade-up">
@@ -363,7 +363,7 @@ export default function PHome() {
 
 
 
-      <section className="panelex__thickness" data-aos="fade-up">
+      <section className="panelex__thickness position-relative" data-aos="fade-up">
         <div className="sm-container">
           <div className="thickness__header">
             <h2>Multiple thicknesses. <br /> same strength.</h2>
@@ -372,7 +372,7 @@ export default function PHome() {
                 <div className="col-md-5">
                   <h4>Standard Board Size</h4>
                 </div>
-                <div className="col-md-7">
+                <div className="col-md-7 sm-position">
                   <h4>Available Thickness Options</h4>
                 </div>
               </div>
@@ -473,7 +473,7 @@ export default function PHome() {
 
       <section className="panelex__faq" data-aos="fade-up">
         <div className="container-fluid">
-          <div className="row mx-5">
+          <div className="row  mx-2 mx-md-5">
             <div className="col-md-6 mb-5 mb-md-0">
               <h2>Frequently Asked <br /> Questions</h2>
               <p>Still have a question in mind? Contact us</p>
@@ -583,8 +583,7 @@ export default function PHome() {
                   <Form.Check
                     type="checkbox"
                     label="I consent to have this website store my submitted information so they can respond to my inquiry."
-                    className="consent-check flex align-items-center"
-                    style={{ display: 'flex', width: '60%' }}
+                    className="consent-check d-flex align-items-center w-100 w-60"
                   />
                   <button type="submit" className="btn-view submit-btn">Submit</button>
                 </div>

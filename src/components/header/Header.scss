@@ -180,7 +180,7 @@
 
         li {
           font-family: var(--font-primary);
-          font-weight: 600;
+          font-weight: 500;
           font-style: 65 Medium;
           font-size: 64px;
           line-height: 76.8px;
@@ -218,8 +218,13 @@
           padding-top: 30px !important;
 
           li {
-            font-size: 85px;
-            line-height: 1.1;
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-style: 65 Medium;
+            font-size: 64px;
+            line-height: 76.8px;
+            letter-spacing: -1%;
+            text-transform: capitalize;
             margin-bottom: 10px;
           }
         }
