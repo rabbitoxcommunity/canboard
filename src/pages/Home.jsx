@@ -182,7 +182,7 @@ export default function PHome() {
 
       <section className="panelex__categories" data-aos="fade-up">
         <div className="sm-container">
-          <div className="col-md-6">
+          <div className="col-md-6 col-tab-8">
             <h2 data-aos="fade-in">Why is Canboard the Smart Choice?</h2>
             <p data-aos="fade-in">Canboard is an advanced HMR engineered wood board designed for interiors exposed to moisture, humidity and frequent use. It retains its strength and shape over time, making it suitable for kitchens, workspaces, storage and commercial settings.</p>
             <p data-aos="fade-in">With strong screw-holding capacity and stable core construction, it serves as a smarter alternative to conventional panel-based products such as plywood, MDF and PVC boards.</p>
@@ -290,7 +290,7 @@ export default function PHome() {
 
       <section className="panelex__apart pt-0" data-aos="fade-up">
         <div className="sm-container mb-5">
-          <div className="col-md-6">
+          <div className="col-md-6 col-tab-8">
             <h2 data-aos="fade-in">What truly <br /> sets it apart?</h2>
             <p data-aos="fade-in">Made from 100% natural wood chips, Canboard is built around a dense, uniform core designed for long-term stability. With higher density than conventional plywood and up to 60% better moisture resistance than standard particle boards, it delivers strong screw-holding performance and reliable durability in everyday interiors.</p>
           </div>
@@ -353,7 +353,7 @@ export default function PHome() {
       </section>
       <section className="panelex__apart" data-aos="fade-up" style={{ backgroundColor: '#F3F0F0', paddingBottom: '100px' }}>
         <div className="sm-container">
-          <div className="col-md-8">
+          <div className="col-md-8 col-tab-12">
             <h2 data-aos="fade-in">40 Years of Engineering <br /> Excellence</h2>
             <p data-aos="fade-in" className='mb-0'>We’ve been producing wood panels for over 40 years—driven by innovation and responsible manufacturing.</p>
             <Link to="/panelex/about" className="btn-view mt-5">About Canboard</Link>

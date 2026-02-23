@@ -234,6 +234,7 @@ section.product__description__section {
 
             h2 {
                 font-size: 56px;
+                line-height: 1.1;
             }
 
             p {
@@ -1883,7 +1884,8 @@ section.panelex__help {
         padding-bottom: 80px;
 
         h2 {
-            font-size: 56px;
+            font-size: 50px;
+            line-height: 1;
         }
 
         p {
@@ -1939,10 +1941,18 @@ section.panelex__help {
         padding-bottom: 60px;
 
         .thickness__header {
-            margin-bottom: 40px;
+            margin-bottom: 20px;
 
             h2 {
                 font-size: 40px;
+            }
+
+            .sub_title {
+                margin-bottom: 0;
+
+                h4 {
+                    font-size: 22px;
+                }
             }
         }
 
@@ -1957,6 +1967,14 @@ section.panelex__help {
 
             .thickness__right {
                 padding-left: 0;
+                padding: 10px 0;
+
+                .thickness__list {
+                    width: 90%;
+                    margin-left: auto;
+                }
+
+
             }
         }
     }
@@ -1966,8 +1984,9 @@ section.panelex__help {
         padding-bottom: 80px;
 
         h2 {
-            font-size: 42px;
+            font-size: 40px;
             margin-bottom: 15px;
+            line-height: 1.1;
         }
 
         p {
@@ -2033,7 +2052,7 @@ section.panelex__help {
         padding-bottom: 80px;
 
         h2 {
-            font-size: 42px;
+            font-size: 40px;
             margin-bottom: 20px;
         }
 
@@ -2690,23 +2709,28 @@ section.panelex__help {
     }
 
     .panelex__banner {
-        height: 70vh;
+        height: 80vh;
 
         img {
-            height: 70vh;
+            height: 80vh;
         }
 
         .banner__content {
-            bottom: 80px;
-            top: auto;
+            top: 50%;
+            transform: translateY(-20%);
+            bottom: auto;
+            left: 0;
+            right: 0;
 
             h1 {
-                font-size: 65px;
-                letter-spacing: -2px;
+                font-size: 45px;
+                line-height: 1.1;
+                letter-spacing: -1px;
             }
 
             p {
-                font-size: 24px;
+                font-size: 20px;
+                line-height: 1.2;
                 max-width: 90%;
             }
         }
@@ -2724,7 +2748,7 @@ section.panelex__help {
         }
 
         h2 {
-            font-size: 32px;
+            font-size: 40px;
             line-height: 1.2;
         }
     }
@@ -2906,54 +2930,93 @@ section.panelex__help {
 
 
 
-    .panelex__banner {
+    // Removed duplicate banner styles
+    section.panelex__trust {
+        padding: 50px 0 !important;
 
-        .banner__content {
-            position: absolute;
-            left: 20px;
-            top: auto;
-            z-index: 2;
-            bottom: 15%;
+        h2 {
+            font-size: 40px !important;
+            line-height: 1.1 !important;
+            margin-bottom: 20px !important;
+        }
 
-            h1 {
-                font-size: 70px;
+        .trust-card {
+            flex-direction: column !important;
+            min-height: auto !important;
+
+            .image-wrapper {
+                width: 100% !important;
+                height: 250px !important;
+            }
+
+            .content-wrapper {
+                width: 100% !important;
+                padding: 30px !important;
+
+                h3 {
+                    font-size: 28px !important;
+                    width: 100% !important;
+                }
+
+                p {
+                    font-size: 18px !important;
+                    line-height: 1.4 !important;
+                }
             }
         }
+    }
 
-        &::after {
-            height: 60vh;
+    section.panelex__manifature {
+        padding: 60px 0 !important;
+        min-height: auto !important;
+
+        h2 {
+            font-size: 40px !important;
+            line-height: 1.1 !important;
         }
 
-        img {
-            width: 100%;
-            height: 60vh;
+        .infoGrid p {
+            width: 100% !important;
+            font-size: 16px !important;
         }
     }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
     // .main__header.panelex__header .header .logo img {
     //     width: 300px;
     // }
+    section.panelex__categories {
+        min-height: 60vh;
+    }
+
+    section.panelex__apart .apart__slider_wrapper {
+        height: 50vh;
+    }
 
     .panelex__banner {
-        height: 80vh;
+        height: 58vh;
 
         img {
-            height: 80vh;
+            height: 85vh;
         }
 
         .banner__content {
-            bottom: 100px;
-            top: auto;
+            top: 55%;
+            transform: translateY(-20%);
+            bottom: auto;
 
             h1 {
-                font-size: 80px;
+                font-size: 64px;
+                line-height: 1.1;
                 letter-spacing: -2px;
             }
 
             p {
-                font-size: 28px;
+                font-size: 26px;
+                line-height: 1.2;
+                max-width: 80%;
             }
         }
     }

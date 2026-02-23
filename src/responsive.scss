@@ -541,6 +541,11 @@
 /* IPAD PRO */
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    section.panelex__thickness .thickness__content .thickness__right .thickness__list .thickness__item .label-box {
+        width: 40px;
+    }
+
     .panelex__banner .banner__content {
         left: 20px;
     }
@@ -554,7 +559,7 @@
     }
 
     .panelex__banner .banner__content h1 {
-        font-size: 80px;
+        font-size: 64px;
     }
 
     section.panelex__teak .grid img {
@@ -575,6 +580,11 @@
     .col-tab-12 {
         flex: 0 0 auto;
         width: 100%;
+    }
+
+    .col-tab-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
     }
 
     .col-tab-6 {
@@ -897,12 +907,26 @@
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    section.panelex__thickness .thickness__content .thickness__right .thickness__list .thickness__item .img-box {
+        padding-right: 20px;
+    }
 
+    section.panelex__thickness .thickness__content .thickness__left .board-visual .board-img-wrapper img {
+        max-width: 210px;
+    }
 
+    section.panelex__thickness .thickness__content .thickness__right .thickness__list .thickness__item .label-box {
+        width: 40px;
+    }
 
     .col-tab-12 {
         flex: 0 0 auto;
         width: 100%;
+    }
+
+    .col-tab-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
     }
 
     .col-tab-6 {
@@ -1238,6 +1262,11 @@
     .col-tab-12 {
         flex: 0 0 auto;
         width: 100%;
+    }
+
+    .col-tab-8 {
+        flex: 0 0 auto;
+        width: 66.66666667%;
     }
 
     .col-tab-6 {
