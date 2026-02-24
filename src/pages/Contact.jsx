@@ -24,7 +24,7 @@ export default function PContact() {
         setLoading(true);
 
         emailjs
-            .sendForm('service_x3xbbpd', 'template_a5q013o', form.current)
+            .sendForm('service_x3xbbpd', 'template_desent7', form.current)
             .then(
                 () => {
                     reset();
@@ -92,8 +92,8 @@ export default function PContact() {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="form-group" data-aos="fade-up" data-aos-delay="300">
-                                            <label htmlFor="userType">You are a:</label>
-                                            <input type="text" className='form-control' id="userType" placeholder="ex: dealer" name='userType' {...register("userType")} />
+                                            <label htmlFor="you_are">You are a:</label>
+                                            <input type="text" className='form-control' id="you_are" placeholder="ex: dealer" name='you_are' {...register("you_are")} />
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +122,7 @@ export default function PContact() {
                                 {success && <Alert key={'success'} variant={'success'} className='mb-3'>Thank you for getting in touch!</Alert>}
 
                                 <div className="row align-items-center mt-5" data-aos="fade-up" data-aos-delay="700">
-                                    <div className="col-md-8">
+                                    <div className="col-md-8 form-group">
                                         <div className="consent-check d-flex align-items-center">
                                             <input type="checkbox" id="consent" {...register("consent", { required: true })} />
                                             <label htmlFor="consent" className="ms-3">I consent to have this website store my submitted information so they can respond to my inquiry.</label>

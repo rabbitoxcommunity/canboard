@@ -10,6 +10,7 @@ import { Parallax, Pagination, Navigation, EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 import 'swiper/css/navigation';
+import HomeContact from './HomeContact';
 
 export default function PHome() {
 
@@ -541,74 +542,7 @@ export default function PHome() {
               <p data-aos="fade-in">Share your requirement and we’ll help you find <br /> the right solution</p>
             </div>
             <div className="col-lg-6">
-              <Form className="help-form">
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <Form.Group>
-                      <Form.Label>Name</Form.Label>
-                      <Form.Control type="text" placeholder="ex: john" />
-                    </Form.Group>
-                  </div>
-                  <div className="col-md-6 mb-4">
-                    <Form.Group>
-                      <Form.Label>Email Address</Form.Label>
-                      <Form.Control type="email" placeholder="john@gmail.com" />
-                    </Form.Group>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <Form.Group>
-                      <Form.Label>Phone</Form.Label>
-                      <Form.Control type="tel" placeholder="Enter your phone number" />
-                    </Form.Group>
-                  </div>
-                  <div className="col-md-6 mb-4">
-                    <Form.Group>
-                      <Form.Label>You are a:</Form.Label>
-                      <Form.Select>
-                        <option>ex: dealer</option>
-                        <option>Architect</option>
-                        <option>Interior Designer</option>
-                        <option>Contractor</option>
-                        <option>End User</option>
-                      </Form.Select>
-                    </Form.Group>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-6 mb-4">
-                    <Form.Group>
-                      <Form.Label>State</Form.Label>
-                      <Form.Select>
-                        <option>Select location</option>
-                      </Form.Select>
-                    </Form.Group>
-                  </div>
-                  <div className="col-md-6 mb-4">
-                    <Form.Group>
-                      <Form.Label>City</Form.Label>
-                      <Form.Select>
-                        <option>Select city</option>
-                      </Form.Select>
-                    </Form.Group>
-                  </div>
-                </div>
-                <div className="mb-4">
-                  <Form.Group>
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows={4} placeholder="Enter your question here" />
-                  </Form.Group>
-                </div>
-                <div className="d-flex justify-content-between align-items-center flex-wrap gap-4 mt-5">
-                  <Form.Check
-                    type="checkbox"
-                    label="I consent to have this website store my submitted information so they can respond to my inquiry."
-                    className="consent-check d-flex align-items-center w-100 w-60"
-                  />
-                  <button type="submit" className="btn-view submit-btn">Submit</button>
-                </div>
-              </Form>
+              <HomeContact />
             </div>
           </div>
         </div>
