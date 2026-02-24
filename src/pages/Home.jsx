@@ -26,13 +26,18 @@ export default function PHome() {
     },
     {
       img: "/assets/img/canboard/slide2.jpg",
-      title: "Kitchen Interiors",
-      desc: "Engineered wood solutions that stand up to the moisture and heavy use found in modern kitchen environments."
+      title: "Office Spaces",
+      desc: "Engineered board designed for workstations, storage, and office furniture that must stay stable and dependable through constant use."
+    },
+    {
+      img: "/assets/img/canboard/slide4.jpg",
+      title: "Educational Spaces",
+      desc: "Canboard offers durable, low-emission engineered boards for safe, stable, and long-lasting interior applications."
     },
     {
       img: "/assets/img/canboard/slide3.jpg",
-      title: "Commercial Workspaces",
-      desc: "Durable and aesthetic panels that provide long-lasting performance for high-traffic office and retail interiors."
+      title: "Retail Spaces",
+      desc: "Our engineered boards are designed for counters, displays and fixtures that face high traffic, frequent use, and changing layouts."
     }
   ];
 
@@ -44,13 +49,18 @@ export default function PHome() {
     },
     {
       img: "/assets/img/canboard/3.jpg",
-      title: "Handles Moisture with Ease",
-      desc: "Absorbs up to 60% less water than standard particle boards, helping maintain strength and stability."
+      title: "Built to Hold Its Form",
+      desc: "Designed to resist bending and breakage, retaining its shape and strength through everyday use."
     },
     {
-      img: "/assets/img/canboard/3.jpg",
-      title: "Handles Moisture with Ease",
-      desc: "Absorbs up to 60% less water than standard particle boards, helping maintain strength and stability."
+      img: "/assets/img/canboard/health.png",
+      title: "Health-friendly",
+      desc: "BIS Certified with ultra-low formaldehyde emissions, as per E1 standards."
+    },
+    {
+      img: "/assets/img/canboard/finish.png",
+      title: "Beautiful Finish",
+      desc: "Uniform, well-calibrated surfaces suitable for direct polishing or painting, with minimal surface preparation required."
     }
   ];
   useEffect(function () {
@@ -58,11 +68,22 @@ export default function PHome() {
   }, []);
 
   const headingRef = useRef(null);
+  const descRef = useRef(null);
 
   useEffect(() => {
     // Animate from blurred to clear
     gsap.fromTo(
       headingRef.current,
+      { filter: "blur(10px)", opacity: 0 },
+      {
+        filter: "blur(0px)",
+        opacity: 1,
+        duration: 3.5,
+        ease: "power2.out",
+      }
+    );
+    gsap.fromTo(
+      descRef.current,
       { filter: "blur(10px)", opacity: 0 },
       {
         filter: "blur(0px)",
@@ -176,7 +197,7 @@ export default function PHome() {
         <img src="/assets/img/canboard/banner.jpg" alt="" />
         <div className="banner__content sm-container">
           <h1 ref={headingRef}>Smartest engineered wood <br /> for everyday interiors.</h1>
-          <p data-aos="fade-up">Build to perform through heat, humidity, and everyday moisture in indian conditions.</p>
+          <p ref={descRef} data-aos="fade-up">Build to perform through heat, humidity, and everyday moisture in indian conditions.</p>
         </div>
       </section>
 
