@@ -2202,10 +2202,10 @@ section.panelex__help {
     }
 
     .panelex__banner {
-        height: 85vh;
+        height: 95vh;
 
         img {
-            height: 85vh;
+            height: 95vh;
             object-position: left;
         }
 
@@ -2614,6 +2614,7 @@ section.panelex__help {
 
     section.panelex__manifature .infoGrid p {
         width: 90%;
+        margin-bottom: 0;
     }
 
     section.panelex__manifature .infoGrid h4 {
@@ -2875,7 +2876,7 @@ section.panelex__help {
     }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 395px) {
     section.panelex__manifature {
         min-height: 125vh;
     }

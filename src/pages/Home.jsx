@@ -515,7 +515,7 @@ export default function PHome() {
                 <div className="col-lg-8 col-md-8 content-side">
                   <h2 data-aos="fade-in">Engineered for everyday performance</h2>
                   <p data-aos="fade-in">Engineered for long-lasting strength, our engineered wood combine moisture resistance, durability, and superior screw-holding for reliable everyday performance.</p>
-                  <Link to="/brochure.pdf" className="btn-view" target="_blank">Download Brochure</Link>
+                  <Link to="/assets/canboard_brochure.pdf" className="btn-view" target="_blank">Download Brochure</Link>
                 </div>
               </div>
             </div>
