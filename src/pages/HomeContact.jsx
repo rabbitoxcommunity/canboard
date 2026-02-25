@@ -18,8 +18,6 @@ export default function HomeContact() {
     const [success, setSuccess] = useState(false)
     const [loading, setLoading] = useState(false)
 
-    emailjs.init('U1aOWkKZmomqW8dVS');
-
     const onSubmit = (data) => {
         console.log(form.current);
         setLoading(true);
@@ -46,10 +44,11 @@ export default function HomeContact() {
 
     useEffect(function () {
         Aos.init({ duration: 2000 });
+        emailjs.init('U1aOWkKZmomqW8dVS');
     }, []);
 
     return (
-        <Form className="help-form" onSubmit={handleSubmit(onSubmit)}>
+        <Form ref={form} className="help-form" onSubmit={handleSubmit(onSubmit)}>
             <div className="row">
                 <div className="col-md-6 mb-4 form-group">
                     <Form.Group>
@@ -114,15 +113,27 @@ export default function HomeContact() {
                 <Form.Check
                     type="checkbox"
                     label="I consent to have this website store my submitted information so they can respond to my inquiry."
-                    className="consent-check d-flex align-items-center w-100 w-60"
+                    className="consent-check d-flex align-items-center w-100 w-60 pb-0"
                     {...register("consent", { required: true })}
                 />
 
-                <button type="submit" className="btn-view submit-btn">Submit</button>
+                <button type="submit" className="btn-view submit-btn" disabled={loading}>
+                    {loading ? (
+                        <>
+                            <Spinner animation="border" size="sm" variant="dark" className='me-2' />
+                            Sending...
+                        </>
+                    ) : 'Submit'}
+                </button>
             </div>
 
             {errors.consent && <div className="form-group"><span className="d-block mt-1">Please agree to continue</span> </div>}
 
+            {success && (
+                <Alert variant="success" className="mt-4">
+                    Thank you! Your message has been sent successfully.
+                </Alert>
+            )}
         </Form>
     )
 }

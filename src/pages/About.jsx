@@ -17,7 +17,7 @@ export default function PAbout() {
           <h1 data-aos="fade-up" data-aos-duration="3000">Designed to last. Built for everyday spaces.</h1>
         </div>
       </section>
-      <img src="/assets/img/canboard/about.png" className='w-100' alt="" />
+      <img src="/assets/img/canboard/about.png" className='w-100 about__img' alt="" />
       <section className="about__desc">
         <div className="container">
           <div className="col-md-6">

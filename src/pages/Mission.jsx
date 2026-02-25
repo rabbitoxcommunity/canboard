@@ -20,7 +20,7 @@ export default function PMission() {
                 <div className="container-fluid">
                     <div className="row align-items-center sm-reverse">
                         <div className="col-md-6 px-0">
-                            <img src="/assets/panelex/mission1.jpg" alt="" />
+                            <img src="/assets/panelex/mission1.png" alt="" />
                         </div>
                         <div className="col-md-6">
                             <div className="contents">

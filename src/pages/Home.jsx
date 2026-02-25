@@ -19,6 +19,17 @@ export default function PHome() {
   const apartSwiperRef = useRef(null);
   const [apartActiveIndex, setApartActiveIndex] = useState(0);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const apartData = [
     {
       img: "/assets/img/canboard/slide1.jpg",
@@ -126,28 +137,7 @@ export default function PHome() {
     }
   ]
 
-  const chipboards = [
-    {
-      img: "/assets/panelex/categories/1.png",
-      title: "Wooden"
-    },
-    {
-      img: "/assets/panelex/categories/2.png",
-      title: "Marble"
-    },
-    {
-      img: "/assets/panelex/categories/3.png",
-      title: "Fabric"
-    },
-    {
-      img: "/assets/panelex/categories/4.png",
-      title: "Solid color"
-    },
-    {
-      img: "/assets/panelex/categories/5.png",
-      title: "Pastel Color"
-    }
-  ]
+
   const thicknessData = [
     { size: "25mm", img: "/assets/img/canboard/thikness/25mm.png" },
     { size: "18mm", img: "/assets/img/canboard/thikness/18mm.png" },
@@ -202,7 +192,7 @@ export default function PHome() {
         </div>
       </section>
 
-      <section className="panelex__categories" data-aos="fade-up">
+      <section className="panelex__categories" data-aos="fade-up" style={{ backgroundImage: `url(${isMobile ? "/assets/img/canboard/mobile/1.png" : "/assets/img/canboard/1.jpg"})` }}>
         <div className="sm-container">
           <div className="col-md-6 col-tab-8">
             <h2 data-aos="fade-in">Why is Canboard the Smart Choice?</h2>
@@ -240,12 +230,12 @@ export default function PHome() {
             </div>
           </div>
           <Swiper
-            spaceBetween={30}
-            slidesPerView={1.2}
+            spaceBetween={isMobile ? 0 : 30}
+            // slidesPerView={1.2}
             onSwiper={(swiper) => (trustSwiperRef.current = swiper)}
             breakpoints={{
               640: {
-                slidesPerView: 1.2,
+                slidesPerView: 1,
               },
               768: {
                 slidesPerView: 1.5,
@@ -254,7 +244,7 @@ export default function PHome() {
                 slidesPerView: 1.3,
               },
             }}
-            className="trustSwiper ml-5 ms-1 ms-md-5"
+            className="trustSwiper ms-md-5"
           >
             {trustData.map((item, index) => (
               <SwiperSlide key={index}>
@@ -288,7 +278,7 @@ export default function PHome() {
                     <Link to="/panelex/products/europa" className="btn-explore">Explore Europa</Link>
                   </div>
                   <div className="card-img">
-                    <img src="/assets/img/canboard/4.png" alt="Europa" />
+                    <img src="/assets/img/canboard/europa.webp" alt="Europa" />
                   </div>
                 </div>
               </div>
@@ -300,7 +290,7 @@ export default function PHome() {
                     <Link to="/panelex/products/indus" className="btn-explore">Explore Indus</Link>
                   </div>
                   <div className="card-img">
-                    <img src="/assets/img/canboard/4.png" alt="Indus" />
+                    <img src="/assets/img/canboard/indus.webp" alt="Indus" />
                   </div>
                 </div>
               </div>
@@ -377,7 +367,7 @@ export default function PHome() {
         <div className="sm-container">
           <div className="col-md-8 col-tab-12">
             <h2 data-aos="fade-in">40 Years of Engineering <br /> Excellence</h2>
-            <p data-aos="fade-in" className='mb-0'>We’ve been producing wood panels for over 40 years—driven by innovation and responsible manufacturing.</p>
+            <p data-aos="fade-in" className='mb-0'>Made from 100% natural wood chips, Canboard is built around a dense, uniform core designed for long-term stability. With higher density than conventional plywood and up to 60% better moisture resistance than standard particle boards, it delivers strong screw-holding performance and reliable durability in everyday interiors.</p>
             <Link to="/panelex/about" className="btn-view mt-5">About Canboard</Link>
           </div>
         </div>
@@ -440,7 +430,7 @@ export default function PHome() {
         </div>
       </section>
 
-      <section className="panelex__manifature" style={{ backgroundImage: 'url(assets/img/canboard/process.svg)', backgroundColor: '#F3F0F0' }}>
+      <section className="panelex__manifature" style={{ backgroundImage: isMobile ? 'url(assets/img/canboard/mobile/2.jpg)' : 'url(assets/img/canboard/process.svg)', backgroundColor: '#F3F0F0' }}>
         <div className="sm-container">
           <div className="row">
             <div className="col-md-6">
@@ -520,7 +510,7 @@ export default function PHome() {
       <section className="panelex__performance pt-0" data-aos="fade-up">
         <div className="container-fluid">
           <div className="mx-4">
-            <div className="performance-card" style={{ backgroundImage: 'url(/assets/img/canboard/can-bg.jpg)' }}>
+            <div className="performance-card" style={{ backgroundImage: isMobile ? 'url(/assets/img/canboard/mobile/3.png)' : 'url(/assets/img/canboard/can-bg.jpg)' }}>
               <div className="row h-100 align-items-center">
                 <div className="col-lg-8 col-md-8 content-side">
                   <h2 data-aos="fade-in">Engineered for everyday performance</h2>

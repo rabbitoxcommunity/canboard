@@ -22,9 +22,16 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: 'secondary';
+  src: url('../public/assets/fonts/Helvetica.ttc') format('opentype');
+  font-weight: 700;
+}
+
 :root {
   --color-primary: #FFCE69;
   --font-primary: 'primary';
+  --font-secondary: 'secondary';
 }
 
 h1,
@@ -114,6 +121,7 @@ h4 {
   position: relative;
   min-width: 125px;
   color: #000;
+  transition: all 0.6s ease;
 }
 
 .btn-primary.contact img {
@@ -124,6 +132,9 @@ h4 {
   background-color: #FFCE69;
   border: 3px solid #FFCE69;
   color: #000;
+  min-width: 165px;
+  transition: all 0.6s ease;
+
 }
 
 .btn-primary.contact img {

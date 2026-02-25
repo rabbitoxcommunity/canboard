@@ -48,6 +48,7 @@
             line-height: 52px;
             font-weight: 400;
             max-width: 80%;
+            font-family: var(--font-secondary);
 
             br {
                 display: block;
@@ -118,16 +119,28 @@ section.product__banner {
 
         .banner__text {
             padding-bottom: 40px;
+            padding-top: 200px;
 
             h1 {
-                font-size: 48px;
-                letter-spacing: -1px;
+                font-size: 70px;
+                line-height: 1;
+                letter-spacing: -2px;
             }
 
             p {
-                font-size: 18px;
-                line-height: 1.1;
+                font-family: var(--font-secondary);
+                font-weight: 400;
+                font-size: 22px;
+                line-height: 24px;
+                letter-spacing: -2%;
+
             }
+        }
+
+        .banner__image img {
+            min-height: 70vh;
+            object-fit: cover;
+            object-position: right;
         }
     }
 }
@@ -163,7 +176,7 @@ section.product__description__section {
         }
 
         p {
-            font-family: Helvetica;
+            font-family: var(--font-secondary);
             font-weight: 400;
             font-style: Regular;
             font-size: 24px;
@@ -198,7 +211,7 @@ section.product__description__section {
             }
 
             h3 {
-                font-family: Helvetica;
+                font-family: var(--font-secondary);
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 30px;
@@ -208,7 +221,7 @@ section.product__description__section {
             }
 
             p {
-                font-family: Helvetica;
+                font-family: var(--font-secondary);
                 font-weight: 300;
                 font-size: 20px;
                 line-height: 24px;
@@ -250,7 +263,7 @@ section.product__description__section {
                     margin-bottom: 25px;
 
                     img {
-                        height: 60px;
+                        height: 80px;
                     }
                 }
 
@@ -268,9 +281,12 @@ section.product__description__section {
         padding-bottom: 80px;
 
         .long-desc {
-            font-size: 18px;
-            margin-bottom: 40px;
-            line-height: 1.5;
+            font-family: var(--font-secondary);
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            letter-spacing: -0.62px;
+
         }
 
         .section-header {
@@ -287,8 +303,12 @@ section.product__description__section {
             }
 
             p {
+                font-family: var(--font-secondary);
+                font-weight: 400;
                 font-size: 18px;
-                line-height: 1.3;
+                line-height: 20px;
+                letter-spacing: -0.25px;
+
 
                 br {
                     display: none;
@@ -304,12 +324,21 @@ section.product__description__section {
                 padding: 50px 20px;
 
                 h3 {
+                    font-family: var(--font-secondary);
+                    font-weight: 700;
                     font-size: 20px;
+                    line-height: 25.78px;
+                    letter-spacing: -0.53px;
+
                 }
 
                 p {
-                    font-size: 18px;
-                    line-height: 1.3;
+                    font-family: var(--font-secondary);
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 20.62px;
+                    letter-spacing: -0.53px;
+
                 }
             }
         }
@@ -319,7 +348,7 @@ section.product__description__section {
 section.panelex__categories {
     padding-top: 100px;
     background-color: #FFFCF5;
-    background-image: url("../../public/assets/img/canboard/1.jpg");
+    // background-image: url("../../public/assets/img/canboard/1.jpg");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -335,7 +364,7 @@ section.panelex__categories {
     }
 
     p {
-        font-family: Helvetica;
+        font-family: var(--font-secondary);
         font-size: 22px;
         font-weight: 400;
         line-height: 30px;
@@ -369,19 +398,21 @@ section.panelex__manifature {
         background: rgba(241, 241, 236, 1);
 
         .count {
-            border: 1px solid #000;
-            width: 35px;
-            height: 35px;
+            border: 3px solid #000;
+            width: 40px;
+            height: 40px;
             border-radius: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 22px;
             margin-bottom: 20px;
+            font-weight: 700;
+            font-family: var(--font-secondary);
         }
 
         h4 {
-            font-family: Helvetica;
+            font-family: var(--font-secondary);
             font-weight: 600;
             font-size: 24px;
             line-height: 38.89px;
@@ -391,7 +422,7 @@ section.panelex__manifature {
         }
 
         p {
-            font-family: Helvetica;
+            font-family: var(--font-secondary);
             font-weight: 400;
             font-size: 18px;
             line-height: 26px;
@@ -607,7 +638,7 @@ section.panelex__mission {
 
         p {
             color: #FFF;
-            font-family: Helvetica;
+            font-family: var(--font-secondary);
             font-size: 22px;
             font-style: normal;
             font-weight: 300;
@@ -642,7 +673,7 @@ section.mission__contents {
 
         p {
             color: #000;
-            font-family: Helvetica;
+            font-family: var(--font-secondary);
             font-size: 22px;
             font-style: normal;
             font-weight: 300;
@@ -871,7 +902,7 @@ section.product__lists {
 
         label {
             font-family: var(--font-primary);
-            font-weight: 600;
+            font-weight: 500;
             font-style: 65 Medium;
             font-size: 15.89px;
             line-height: 23.11px;
@@ -948,11 +979,13 @@ section.product__lists {
 
         label {
             font-family: var(--font-primary);
-            font-weight: 500;
+            font-weight: 400;
+            font-style: 55 Roman;
             font-size: 18px;
-            color: #000;
-            line-height: 1.25;
-            max-width: 480px;
+            line-height: 20px;
+            letter-spacing: -0.5%;
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
     }
 
@@ -962,7 +995,7 @@ section.product__lists {
         border-radius: 100px;
         padding: 14px 50px;
         font-family: var(--font-primary);
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         color: #000;
         transition: all 0.3s ease;
@@ -1077,7 +1110,7 @@ section.panelex__trust {
             }
 
             p {
-                font-family: var(--font-primary);
+                font-family: var(--font-secondary);
                 font-weight: 400;
                 font-style: 55 Roman;
                 font-size: 24px;
@@ -1183,7 +1216,7 @@ section.panelex__offerings {
             }
 
             p {
-                font-family: Helvetica;
+                font-family: var(--font-secondary);
                 font-size: 22px;
                 line-height: 28px;
                 color: #000;
@@ -1215,7 +1248,7 @@ section.panelex__offerings {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 290px;
+            height: 300px;
             z-index: -1;
 
             img {
@@ -1223,7 +1256,7 @@ section.panelex__offerings {
                 height: 100%;
                 object-fit: cover;
                 transition: transform 0.4s ease;
-                object-position: bottom;
+                object-position: center;
                 // filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.08));
             }
         }
@@ -1246,7 +1279,7 @@ section.panelex__apart {
     }
 
     p {
-        font-family: Helvetica;
+        font-family: var(--font-secondary);
         font-size: 22px;
         line-height: 30px;
         color: #000;
@@ -1307,7 +1340,7 @@ section.panelex__apart {
                 }
 
                 p {
-                    font-family: Helvetica;
+                    font-family: var(--font-secondary);
                     font-size: 18px;
                     line-height: 26px;
                     color: #000;
@@ -1375,7 +1408,7 @@ section.panelex__excellence {
         }
 
         p {
-            font-family: Helvetica;
+            font-family: var(--font-secondary);
             font-size: 20px;
             line-height: 1.4;
             color: #1a1a1a;
@@ -1592,7 +1625,7 @@ section.panelex__faq {
     }
 
     p {
-        font-family: Helvetica;
+        font-family: var(--font-secondary);
         font-size: 24px;
         line-height: 1.3;
         color: #000;
@@ -1643,7 +1676,7 @@ section.panelex__faq {
 
             .accordion-body {
                 padding: 0 0 30px 0;
-                font-family: Helvetica;
+                font-family: var(--font-secondary);
                 font-size: 16px;
                 line-height: 1.6;
                 color: #555;
@@ -1661,7 +1694,7 @@ section.panelex__performance {
 
     .performance-card {
         background-size: cover;
-        background-position: center;
+        background-position: left;
         border-radius: 30px;
         padding: 100px;
         min-height: 550px;
@@ -1695,7 +1728,7 @@ section.panelex__performance {
             }
 
             p {
-                font-family: Helvetica;
+                font-family: var(--font-secondary);
                 font-size: 20px;
                 line-height: 1.4;
                 color: #000;
@@ -1723,7 +1756,7 @@ section.panelex__help {
     }
 
     p {
-        font-family: Helvetica;
+        font-family: var(--font-secondary);
         font-size: 20px;
         line-height: 1.4;
         color: #000;
@@ -1733,7 +1766,7 @@ section.panelex__help {
 
     .help-form {
         .form-label {
-            font-family: Helvetica;
+            font-family: var(--font-secondary);
             font-size: 14px;
             font-weight: 600;
             margin-bottom: 5px;
@@ -1787,12 +1820,13 @@ section.panelex__help {
             }
 
             .form-check-label {
-                font-family: Helvetica;
+                font-family: var(--font-secondary);
                 font-size: 16px;
                 line-height: 1.4;
                 color: #000;
                 font-weight: 300;
                 max-width: 450px;
+                padding-bottom: 0;
             }
         }
 
@@ -1837,13 +1871,16 @@ section.panelex__help {
     }
 
     section.panelex__trust {
-        padding-top: 50px;
         padding-bottom: 50px;
+        padding-top: 70px !important;
 
         h2 {
-            font-size: 34px;
-            line-height: 1.1;
-            margin-bottom: 20px;
+            // font-weight: 700;
+            font-style: 75 Bold;
+            font-size: 33.44px;
+            line-height: 34.42px;
+            letter-spacing: -2%;
+            margin-bottom: 30px;
         }
 
         .header-row {
@@ -1859,6 +1896,10 @@ section.panelex__help {
             top: 0;
         }
 
+        .swiper-slide {
+            padding-right: 15px !important;
+        }
+
         .trust-card {
             flex-direction: column;
             min-height: auto;
@@ -1868,12 +1909,31 @@ section.panelex__help {
                 height: 250px;
             }
 
+
+
             .content-wrapper {
                 width: 100%;
-                padding: 30px;
+                padding: 40px 30px;
+                min-height: 230px;
+                justify-content: flex-start;
 
                 h3 {
-                    font-size: 28px;
+                    font-weight: 500;
+                    font-style: 65 Medium;
+                    font-size: 26.81px;
+                    line-height: 28.86px;
+                    letter-spacing: -2%;
+
+                }
+
+                p {
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 16px;
+                    line-height: 20px;
+                    letter-spacing: -0.37px;
+                    width: 80%;
+
                 }
             }
         }
@@ -1951,7 +2011,13 @@ section.panelex__help {
                 margin-bottom: 0;
 
                 h4 {
-                    font-size: 22px;
+                    font-weight: 600;
+                    font-style: 65 Medium;
+                    font-size: 24px;
+                    line-height: 62.32px;
+                    letter-spacing: -3%;
+                    vertical-align: middle;
+                    padding-left: 0;
                 }
             }
         }
@@ -2032,7 +2098,7 @@ section.panelex__help {
             min-height: auto;
 
             &::before {
-                background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95) 50%, rgba(255, 255, 255, 0.3) 100%);
+                background: transparent;
             }
 
             .content-side {
@@ -2067,8 +2133,11 @@ section.panelex__help {
         padding-bottom: 50px;
 
         h2 {
-            font-size: 40px;
-            margin-bottom: 30px;
+            font-style: 75 Bold;
+            font-size: 33.44px;
+            line-height: 34.42px;
+            letter-spacing: -2%;
+
         }
 
         .offering-card {
@@ -2091,7 +2160,7 @@ section.panelex__help {
 
             .card-img {
                 height: 200px;
-                padding: 0 20px;
+                // padding: 0 20px;
             }
         }
     }
@@ -2103,26 +2172,32 @@ section.panelex__help {
     }
 }
 
+
+
 @media only screen and (max-width: 600px) {
     .main__header.panelex__header .header .logo img {
         width: 155px;
     }
 
     .panelex__banner {
-        height: 65vh;
+        height: 85vh;
 
         img {
-            height: 65vh;
+            height: 85vh;
+            object-position: left;
         }
 
         .banner__content {
-            bottom: 60px;
+            bottom: 90px;
             top: auto;
 
             h1 {
-                font-size: 40px;
-                letter-spacing: -1px;
-                line-height: 1;
+                font-weight: 600;
+                font-style: 65 Medium;
+                font-size: 37.31px;
+                line-height: 38.15px;
+                letter-spacing: -3%;
+
 
                 br {
                     display: none;
@@ -2130,8 +2205,12 @@ section.panelex__help {
             }
 
             p {
-                font-size: 18px;
-                line-height: 1.3;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 22.03px;
+                line-height: 24.23px;
+                letter-spacing: -2%;
+
 
                 br {
                     display: none;
@@ -2141,14 +2220,16 @@ section.panelex__help {
     }
 
     section.panelex__categories {
-        background-size: contain;
+        background-size: cover;
         // background-color: #f2f2f2;
-        min-height: 130vh;
+        min-height: 70vh;
+        padding-top: 70px !important;
 
     }
 
     section.panelex__trust .navigation {
         position: relative;
+        gap: 5px !important;
     }
 
     section.panelex__categories {
@@ -2163,12 +2244,24 @@ section.panelex__help {
         }
 
         h2 {
-            font-size: 32px;
-            line-height: 1.2;
+            font-style: 75 Bold;
+            font-size: 33.44px;
+            line-height: 34.42px;
+            letter-spacing: -2%;
+
 
             br {
                 display: none;
             }
+        }
+
+        p {
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.25px;
+
         }
     }
 
@@ -2178,11 +2271,14 @@ section.panelex__help {
 
 
     section.panelex__manifature {
-        min-height: 70vh;
+        min-height: 100vh;
 
         h2 {
-            font-size: 46px;
-            line-height: 1;
+            font-style: 75 Bold;
+            font-size: 33.26px;
+            line-height: 34.24px;
+            letter-spacing: -2%;
+
         }
     }
 
@@ -2228,24 +2324,53 @@ section.panelex__help {
 
     .panelex__about {
         h1 {
-            font-size: 38px;
-            line-height: normal;
-            letter-spacing: -2%;
+            font-weight: 600;
+            font-style: 65 Medium;
+            font-size: 37.31px;
+            line-height: 38.15px;
+            letter-spacing: -3%;
+            text-align: left;
+            width: 80%;
         }
     }
 
+    img.about__img {
+        height: 70vh;
+        object-fit: cover;
+    }
+
     section.about__desc h2 {
-        font-size: 38px;
-        line-height: 45px;
+        font-weight: 700;
+        font-style: 75 Bold;
+        font-size: 33.44px;
+        line-height: 34.42px;
+        letter-spacing: -2%;
+        margin-bottom: 30px;
+
+    }
+
+    section.about__desc p {
+        font-family: var(--font-secondary);
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.25px;
+
     }
 
     section.about__desc .p-50 {
         padding-right: 70px;
+        padding: 0 !important;
     }
 
     section.panelex__history h2 {
-        font-size: 38px;
-        line-height: normal;
+        font-weight: 700;
+        font-style: 75 Bold;
+        font-size: 33.44px;
+        line-height: 34.42px;
+        letter-spacing: -2%;
+
     }
 
     section.panelex__history {
@@ -2436,7 +2561,7 @@ section.panelex__help {
 
     section.mission__contents {
         img {
-            height: 50dvh;
+            height: 60dvh;
         }
     }
 
@@ -2458,15 +2583,21 @@ section.panelex__help {
 
 
     .sm-position {
-        bottom: 100%;
         position: absolute;
         top: 58%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(0%, -50%);
     }
 
     section.panelex__manifature .infoGrid p {
         width: 90%;
+    }
+
+    section.panelex__manifature .infoGrid h4 {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 38.89px;
+        letter-spacing: -0.54px;
+
     }
 
     section.panelex__apart {
@@ -2474,12 +2605,24 @@ section.panelex__help {
         padding-bottom: 40px;
 
         h2 {
-            font-size: 32px;
-            margin-bottom: 25px;
+            font-style: 75 Bold;
+            font-size: 33.44px;
+            line-height: 34.42px;
+            letter-spacing: -2%;
 
             br {
                 display: none;
             }
+        }
+
+        p {
+            font-family: var(--font-secondary);
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.25px;
+
         }
 
 
@@ -2493,10 +2636,11 @@ section.panelex__help {
 
             .info-box-fixed {
                 padding: 30px;
-                width: 100%;
-                right: 0;
-                bottom: 0;
-                border-radius: 0;
+                width: 90%;
+                right: 20px;
+                bottom: 20px;
+                margin: 0 auto;
+                border-radius: 20px;
 
                 .info-content {
                     h3 {
@@ -2564,10 +2708,13 @@ section.panelex__help {
         }
 
         .faq-accordion .accordion-item .accordion-header .accordion-button {
-            font-size: 16px;
-            padding: 15px 0;
+            font-family: var(--font-secondary);
             font-weight: 400;
-            line-height: 1.1;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: -0.4px;
+
         }
     }
 
@@ -2598,11 +2745,17 @@ section.panelex__help {
         .performance-card {
             padding: 30px;
             border-radius: 20px;
-            background-position: right center;
+            min-height: 80vh;
 
             .content-side {
                 h2 {
-                    font-size: 32px;
+                    font-weight: 600;
+                    font-style: 75 Bold;
+                    font-size: 33.26px;
+                    line-height: 34.24px;
+                    letter-spacing: -2%;
+                    margin-top: 20px;
+
                 }
 
                 p {
@@ -2623,7 +2776,16 @@ section.panelex__help {
         }
 
         p {
-            font-size: 16px;
+            font-family: var(--font-secondary);
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.25px;
+
+            br {
+                display: none;
+            }
         }
 
         .help-form {
@@ -2682,10 +2844,29 @@ section.panelex__help {
 
             .card-img {
                 height: 180px;
-                padding: 0 15px;
+                // padding: 0 15px;
                 margin-top: 10px;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    section.panelex__manifature {
+        min-height: 125vh;
+    }
+
+    section.panelex__categories {
+        min-height: 90vh;
+    }
+
+    section.panelex__performance .performance-card {
+        min-height: 110vh;
+        background-position: left;
+    }
+
+    .panelex__about {
+        min-height: 55vh;
     }
 }
 

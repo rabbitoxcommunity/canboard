@@ -54,7 +54,7 @@ export default function PContact() {
                     <h1 data-aos="fade-up">Tell us about your enquiry —
                         we’ll be in touch soon.</h1>
                 </div>
-                <div className="row justify-content-between">
+                <div className="row justify-content-between" data-aos="fade-up" data-aos-delay="200">
                     <div className="col-md-5">
                         <ul>
                             <li>+91 9895 112 233</li>
@@ -62,19 +62,19 @@ export default function PContact() {
                         </ul>
                     </div>
                     <div className="col-md-7">
-                        <form ref={form} onSubmit={handleSubmit(onSubmit)}>
+                        <form ref={form} onSubmit={handleSubmit(onSubmit)} data-aos="fade-up" data-aos-delay="300">
                             <div className="forms">
                                 <input type="hidden" name="website" value="Panelex" />
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <div className="form-group" data-aos="fade-up">
+                                        <div className="form-group">
                                             <label htmlFor="name">Name</label>
                                             <input type="text" className='form-control' id="name" placeholder="ex: john" name='name' {...register("name", { required: true })} />
                                             {errors.name && <span>Please enter name</span>}
                                         </div>
                                     </div>
                                     <div className="col-md-6">
-                                        <div className="form-group" data-aos="fade-up" data-aos-delay="100">
+                                        <div className="form-group">
                                             <label htmlFor="email">Email Address</label>
                                             <input type="email" className='form-control' id="email" placeholder="john@gmail.com" name='email' {...register("email", { required: "Please enter email", pattern: { value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, message: "Please enter a valid email" } })} />
                                             {errors.email && <span>{errors.email.message}</span>}
@@ -84,14 +84,14 @@ export default function PContact() {
 
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <div className="form-group" data-aos="fade-up" data-aos-delay="200">
+                                        <div className="form-group">
                                             <label htmlFor="phone">Phone</label>
                                             <input type="text" className='form-control' id="phone" placeholder="Enter your phone number" name='phone' {...register("phone", { required: "Please enter phone number" })} />
                                             {errors.phone && <span>{errors.phone.message}</span>}
                                         </div>
                                     </div>
                                     <div className="col-md-6">
-                                        <div className="form-group" data-aos="fade-up" data-aos-delay="300">
+                                        <div className="form-group">
                                             <label htmlFor="you_are">You are a:</label>
                                             <input type="text" className='form-control' id="you_are" placeholder="ex: dealer" name='you_are' {...register("you_are")} />
                                         </div>
@@ -100,20 +100,20 @@ export default function PContact() {
 
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <div className="form-group" data-aos="fade-up" data-aos-delay="400">
+                                        <div className="form-group">
                                             <label htmlFor="state">State</label>
                                             <input type="text" className='form-control' id="state" placeholder="Select location" name='state' {...register("state")} />
                                         </div>
                                     </div>
                                     <div className="col-md-6">
-                                        <div className="form-group" data-aos="fade-up" data-aos-delay="500">
+                                        <div className="form-group">
                                             <label htmlFor="city">City</label>
                                             <input type="text" className='form-control' id="city" placeholder="Select city" name='city' {...register("city")} />
                                         </div>
                                     </div>
                                 </div>
 
-                                <div className="form-group" data-aos="fade-up" data-aos-delay="600">
+                                <div className="form-group">
                                     <label htmlFor="message">Message</label>
                                     <textarea className="form-control" id="message" cols="30" placeholder="Enter your question here" name='message' rows="5" {...register("message", { required: true })}></textarea>
                                     {errors.message && <span>Please enter message</span>}
@@ -121,7 +121,7 @@ export default function PContact() {
 
                                 {success && <Alert key={'success'} variant={'success'} className='mb-3'>Thank you for getting in touch!</Alert>}
 
-                                <div className="row align-items-center mt-5" data-aos="fade-up" data-aos-delay="700">
+                                <div className="row align-items-center mt-5">
                                     <div className="col-md-8 form-group">
                                         <div className="consent-check d-flex align-items-center">
                                             <input type="checkbox" id="consent" {...register("consent", { required: true })} />

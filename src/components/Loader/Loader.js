@@ -3,7 +3,7 @@ import './Loader.scss'
 function Loader() {
   return (
     <div className='setLoading'>
-      <img src='/assets/img/logo.svg' />
+      <img src='/assets/img/logo-icon.svg' />
     </div>
   )
 }
