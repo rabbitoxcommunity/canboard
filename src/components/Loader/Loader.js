@@ -1,9 +1,12 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Loader.scss'
 function Loader() {
   return (
     <div className='setLoading'>
-      <img src='/assets/img/logo-icon.svg' />
+      <div className="gooey-loader">
+        <div className="dot"></div>
+        <div className="dot"></div>
+      </div>
     </div>
   )
 }
