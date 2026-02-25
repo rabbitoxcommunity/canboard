@@ -908,6 +908,11 @@
 /* TABLET */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    section.panelex__categories {
+        background-size: contain;
+        min-height: 90vh;
+    }
+
     section.panelex__thickness .thickness__content .thickness__right .thickness__list .thickness__item .img-box {
         padding-right: 20px;
     }

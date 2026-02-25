@@ -268,6 +268,10 @@ section.product__description__section {
                 }
 
                 h3 {
+                    font-size: 24px;
+                }
+
+                p {
                     font-size: 20px;
                 }
             }
@@ -2156,6 +2160,10 @@ section.panelex__help {
                 p {
                     font-size: 18px;
                     width: 100%;
+
+                    br {
+                        display: none;
+                    }
                 }
             }
 
@@ -2179,6 +2187,14 @@ section.panelex__help {
 
     .btn-primary.contact {
         padding: 10px;
+
+        &:hover {
+            min-width: auto !important;
+
+            img {
+                display: none;
+            }
+        }
     }
 
     .main__header.panelex__header .header .logo img {
