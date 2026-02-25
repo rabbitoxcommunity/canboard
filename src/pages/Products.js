@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import AOS from 'aos';
 
@@ -89,6 +89,18 @@ export default function Products() {
         window.scrollTo(0, 0);
     }, [id]);
 
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => {
+            setIsMobile(window.innerWidth <= 768);
+        };
+        checkMobile();
+        window.addEventListener("resize", checkMobile);
+        return () => window.removeEventListener("resize", checkMobile);
+    }, []);
+
     return (
         <div className='canboard__products'>
             <section className="product__banner">
@@ -160,12 +172,12 @@ export default function Products() {
                         </div>
                     </div>
                     <Swiper
-                        spaceBetween={30}
-                        slidesPerView={1.2}
+                        spaceBetween={isMobile ? 0 : 30}
+                        // slidesPerView={1.2}
                         onSwiper={(swiper) => (trustSwiperRef.current = swiper)}
                         breakpoints={{
                             640: {
-                                slidesPerView: 1.2,
+                                slidesPerView: 1,
                             },
                             768: {
                                 slidesPerView: 1.5,
@@ -174,7 +186,7 @@ export default function Products() {
                                 slidesPerView: 1.3,
                             },
                         }}
-                        className="trustSwiper ml-1 ml-md-5 ms-1 ms-md-5"
+                        className="trustSwiper ms-md-5"
                     >
                         {trustData.map((item, index) => (
                             <SwiperSlide key={index}>

@@ -2018,6 +2018,7 @@ section.panelex__help {
                     letter-spacing: -3%;
                     vertical-align: middle;
                     padding-left: 0;
+
                 }
             }
         }
@@ -2175,6 +2176,11 @@ section.panelex__help {
 
 
 @media only screen and (max-width: 600px) {
+
+    .btn-primary.contact {
+        padding: 10px;
+    }
+
     .main__header.panelex__header .header .logo img {
         width: 155px;
     }
@@ -2586,6 +2592,8 @@ section.panelex__help {
         position: absolute;
         top: 58%;
         transform: translate(0%, -50%);
+        left: 0;
+        text-align: center;
     }
 
     section.panelex__manifature .infoGrid p {
@@ -2712,7 +2720,7 @@ section.panelex__help {
             font-weight: 400;
             font-style: Regular;
             font-size: 16px;
-            line-height: 30px;
+            line-height: 20px;
             letter-spacing: -0.4px;
 
         }

@@ -59,7 +59,7 @@ export default function Header() {
             <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
             <nav className="navbar">
-              <Link to='/contact' style={{ textDecoration: 'none' }}> <div className="contact btn btn-primary hidden-xs">Get a Sample <img src="/assets/img/menubtn-arrow.svg" alt="" /></div></Link>
+              <Link to='/contact' style={{ textDecoration: 'none' }}> <div className="contact btn btn-primary">Get a Sample <img src="/assets/img/menubtn-arrow.svg" alt="" /></div></Link>
 
               <div className={`menu-toggle ${menuActive ? 'active' : ''}`} onClick={handleMenu}>
                 <div className={`line ${homePage && 'home-line'}`}></div>
