@@ -57,8 +57,8 @@ export default function PContact() {
                 <div className="row justify-content-between" data-aos="fade-up" data-aos-delay="200">
                     <div className="col-md-5">
                         <ul>
-                            <li>+91 9895 112 233</li>
-                            <li>info@canboard.in</li>
+                            <li><a href="tel:+919895112233">+91 9895 112 233</a></li>
+                            <li><a href="mailto:info@canboard.in">Info@canboard.in</a></li>
                         </ul>
                     </div>
                     <div className="col-md-7">

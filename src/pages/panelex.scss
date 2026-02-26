@@ -897,6 +897,11 @@ section.product__lists {
             padding: 10px 20px;
             border-radius: 100px;
             text-decoration: none;
+
+            a {
+                text-decoration: none;
+                color: #000;
+            }
         }
     }
 
@@ -2041,7 +2046,7 @@ section.panelex__help {
                 padding: 10px 0;
 
                 .thickness__list {
-                    width: 90%;
+                    width: 100%;
                     margin-left: auto;
                 }
 
@@ -2613,7 +2618,7 @@ section.panelex__help {
     }
 
     section.panelex__manifature .infoGrid p {
-        width: 90%;
+        width: 100%;
         margin-bottom: 0;
     }
 

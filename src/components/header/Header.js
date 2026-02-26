@@ -88,8 +88,8 @@ export default function Header() {
                     <img src="/assets/img/canboard/menu-back.svg" alt="Back" />
                   </div>
                   <ul className="submenu-list">
-                    <li data-aos="fade-up" data-aos-delay="100"><Link to='/panelex/products/europa' onClick={handleMenu}>Europa</Link></li>
-                    <li data-aos="fade-up" data-aos-delay="200"><Link to='/panelex/products/indus' onClick={handleMenu}>Indus</Link></li>
+                    <li data-aos="fade-up" data-aos-delay="100"><Link to='/products/europa' onClick={handleMenu}>Europa</Link></li>
+                    <li data-aos="fade-up" data-aos-delay="200"><Link to='/products/indus' onClick={handleMenu}>Indus</Link></li>
                   </ul>
                 </div>
               )}

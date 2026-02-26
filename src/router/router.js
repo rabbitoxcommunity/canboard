@@ -12,7 +12,6 @@ function RouteHandler() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/panelex/products/:id" element={<Products />} />
       <Route path="/products/:id" element={<Products />} />
       <Route path="/mission" element={<Mission />} />
       <Route path="/contact" element={<Contact />} />

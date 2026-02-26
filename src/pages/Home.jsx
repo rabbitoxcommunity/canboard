@@ -185,7 +185,10 @@ export default function PHome() {
     <>
       {/* <Outlet /> */}
       <section className="p-0 panelex__banner">
-        <img src="/assets/img/canboard/banner.jpg" alt="" />
+        {
+          isMobile ? <img src="/assets/img/canboard/banner-sm.webp" alt="" /> : <img src="/assets/img/canboard/banner.webp" alt="" />
+        }
+
         <div className="banner__content sm-container">
           <h1 ref={headingRef}>Smartest engineered wood <br /> for everyday interiors.</h1>
           <p ref={descRef} data-aos="fade-up">Build to perform through heat, humidity, and everyday moisture in indian conditions.</p>
@@ -275,7 +278,7 @@ export default function PHome() {
                   <div className="card-top">
                     <h3>Europa</h3>
                     <p>Laminated HMR boards with high-quality <br /> European décor papers.</p>
-                    <Link to="/panelex/products/europa" className="btn-explore">Explore Europa</Link>
+                    <Link to="/products/europa" className="btn-explore">Explore Europa</Link>
                   </div>
                   <div className="card-img">
                     <img src="/assets/img/canboard/europa.webp" alt="Europa" />
@@ -287,7 +290,7 @@ export default function PHome() {
                   <div className="card-top">
                     <h3>Indus</h3>
                     <p>Laminated HMR boards with premium, <br /> high-quality décor papers.</p>
-                    <Link to="/panelex/products/indus" className="btn-explore">Explore Indus</Link>
+                    <Link to="/products/indus" className="btn-explore">Explore Indus</Link>
                   </div>
                   <div className="card-img">
                     <img src="/assets/img/canboard/indus.webp" alt="Indus" />
@@ -368,7 +371,7 @@ export default function PHome() {
           <div className="col-md-8 col-tab-12">
             <h2 data-aos="fade-in">40 Years of Engineering <br /> Excellence</h2>
             <p data-aos="fade-in" className='mb-0'>Made from 100% natural wood chips, Canboard is built around a dense, uniform core designed for long-term stability. With higher density than conventional plywood and up to 60% better moisture resistance than standard particle boards, it delivers strong screw-holding performance and reliable durability in everyday interiors.</p>
-            <Link to="/panelex/about" className="btn-view mt-5">About Canboard</Link>
+            <Link to="/about" className="btn-view mt-5">About Canboard</Link>
           </div>
         </div>
       </section>
@@ -509,7 +512,7 @@ export default function PHome() {
 
       <section className="panelex__performance pt-0" data-aos="fade-up">
         <div className="container-fluid">
-          <div className="mx-4">
+          <div className="mx-1 mx-md-4">
             <div className="performance-card" style={{ backgroundImage: isMobile ? 'url(/assets/img/canboard/mobile/3.png)' : 'url(/assets/img/canboard/can-bg.jpg)' }}>
               <div className="row h-100 align-items-center">
                 <div className="col-lg-8 col-md-8 content-side">
@@ -526,7 +529,7 @@ export default function PHome() {
 
       <section className="panelex__help" data-aos="fade-up">
         <div className="container-fluid">
-          <div className="row justify-content-between mx-4">
+          <div className="row justify-content-between mx-1 mx-md-4">
             <div className="col-lg-6 mb-5 mb-lg-0 line-h">
               <h2 data-aos="fade-in">Need help choosing <br /> the right board?</h2>
               <p data-aos="fade-in">Share your requirement and we’ll help you find <br /> the right solution</p>
