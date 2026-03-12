@@ -29,7 +29,7 @@
 }
 
 :root {
-  --color-primary: #FFCE69;
+  --color-primary: #0D2040;
   --font-primary: 'primary';
   --font-secondary: 'secondary';
 }
@@ -71,9 +71,9 @@ h4 {
 }
 
 .btn-primary {
-  background-color: #FFCE69;
+  background-color: #0D2040;
   border: none;
-  border: 3px solid #FFCE69;
+  border: 3px solid #0D2040;
   border-radius: 100px;
   color: #000;
   font-weight: 600;
@@ -85,14 +85,14 @@ h4 {
 
   &:hover {
     background-color: transparent;
-    border: 3px solid #FFCE69;
+    border: 3px solid #0D2040;
     color: #000;
   }
 
   &.btn:active {
-    background-color: #FFCE69;
+    background-color: #0D2040;
     border: none;
-    border: 3px solid #FFCE69;
+    border: 3px solid #0D2040;
     border-radius: 100px;
   }
 }
@@ -120,8 +120,16 @@ h4 {
   text-decoration: none;
   position: relative;
   min-width: 125px;
-  color: #000;
+  color: #fff;
   transition: all 0.6s ease;
+  background-color: #0D2040;
+  border: 3px solid #0D2040;
+
+  &.home-btn {
+    background-color: #fff;
+    color: #0D2040;
+    border: 3px solid #fff;
+  }
 }
 
 .btn-primary.contact img {
@@ -129,9 +137,9 @@ h4 {
 }
 
 .btn-primary.contact:hover {
-  background-color: #FFCE69;
-  border: 3px solid #FFCE69;
-  color: #000;
+  background-color: #0D2040;
+  border: 3px solid #0D2040;
+  color: #fff;
   min-width: 165px;
   transition: all 0.6s ease;
 
@@ -154,7 +162,7 @@ h4 {
   transform: translateX(8px);
   height: 15px;
   right: 20px;
-  // filter: brightness(0) invert(1) !important;
+  filter: brightness(0) invert(1) !important;
 }
 
 .btn-secondary {

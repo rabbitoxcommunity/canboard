@@ -141,9 +141,8 @@ export default function PHome() {
   const thicknessData = [
     { size: "25mm", img: "/assets/img/canboard/thikness/25mm.png" },
     { size: "18mm", img: "/assets/img/canboard/thikness/18mm.png" },
-    { size: "17mm", img: "/assets/img/canboard/thikness/17mm.png" },
-    { size: "15mm", img: "/assets/img/canboard/thikness/15mm.png" },
-    { size: "11mm", img: "/assets/img/canboard/thikness/11mm.png" },
+    { size: "16mm", img: "/assets/img/canboard/thikness/15mm.png" },
+    { size: "12mm", img: "/assets/img/canboard/thikness/11mm.png" },
     { size: "9mm", img: "/assets/img/canboard/thikness/9mm.png" },
   ];
 
